@@ -1,0 +1,1397 @@
+{
+  "componentChunkName": "component---src-pages-documents-tsx",
+  "path": "/documents",
+  "result": {
+    "data": {
+      "allWebsiteLinksInnovationPathwaysXlsxDocuments": {
+        "edges": [
+          {
+            "node": {
+              "Name": "Joint Chiefs of Staff Doctrine Library",
+              "Type": "Website",
+              "Url": "https://www.jcs.mil/Doctrine/",
+              "Description": "Joint Doctrine constitutes official advice; however, the judgment of the commander is paramount in all situations.  This description will be captured in joint doctrine policy and materials (e.g., joint publication prefaces) and implemented going forward.",
+              "Date": null,
+              "Publisher": "Joint Chiefs of Staff"
+            }
+          },
+          {
+            "node": {
+              "Name": "GameChanger",
+              "Type": "Website",
+              "Url": "https://gamechanger.advana.data.mil/",
+              "Description": "The Department’s authoritative corpus of requirements and policy to drive search, discovery, understanding, and analytic capabilities",
+              "Date": null,
+              "Publisher": "CDAO"
+            }
+          },
+          {
+            "node": {
+              "Name": "Under Secretary of Defense (Comptroller)",
+              "Type": "Website",
+              "Url": "https://comptroller.defense.gov/",
+              "Description": "Provides all of the information you need to understand the budget and financial management policy of the Department of Defense. In addition to budget numbers, justification materials, and performance measures you will also find information about the Department's ongoing effort to improve efficiency and accountability.",
+              "Date": null,
+              "Publisher": "USD(C)"
+            }
+          },
+          {
+            "node": {
+              "Name": "DoD Chief Information Officer (CIO)",
+              "Type": "Website",
+              "Url": "https://dodcio.defense.gov/Library/",
+              "Description": "The Department of Defense Chief Information Officer is the Principal Staff Assistant and senior Information Technology advisor to the Secretary of Defense.  This role includes overseeing many national security and defense business systems, managing information resources, and finding efficiencies. It is responsible for all matters relating to the Department’s information enterprise",
+              "Date": null,
+              "Publisher": "CIO"
+            }
+          },
+          {
+            "node": {
+              "Name": "Chief Digital and Artifical Intelligence Office (CDAO)",
+              "Type": "Website",
+              "Url": "https://www.ai.mil/About/Resources/",
+              "Description": "The Department of Defense’s Chief Digital and Artificial Intelligence Office (CDAO) is the senior official responsible for the acceleration of the DoD’s adoption of data, analytics, and AI to generate decision advantage across, from the boardroom to the battlefield.  ",
+              "Date": null,
+              "Publisher": "CDAO"
+            }
+          },
+          {
+            "node": {
+              "Name": "Defense Acquisiton Workforce (DAU)",
+              "Type": "Website",
+              "Url": "https://www.dau.edu/",
+              "Description": "This page is designed to offer up resources for a Defense Acquisition Workforce fully enabled by the power of information, with enhanced ability to agilely support the warfighter’s capability needs. Whether it’s access to licensed databases, DAU publications, professional reading lists, or research capabilities, DAU and its content partners provide a rich, holistic environment that keeps the Defense Acquisition Workforce informed and situationally aware.",
+              "Date": null,
+              "Publisher": "USD(A&S)"
+            }
+          },
+          {
+            "node": {
+              "Name": "Defense Science Board",
+              "Type": "Website",
+              "Url": "https://dsb.cto.mil/Reports/",
+              "Description": "The Defense Science Board has served the nation by providing innovative solutions to myriad technological, operational, and managerial problems since 1956. The Board, comprised of former senior military and government officials, as well as industry and academia leaders, is best equipped to tackle the Department’s pressing and complex challenges and provides independent advice and recommendation on matters supporting the DOD scientific and technical enterprise including science, technology, manufacturing, acquisition process, and other topics of special interest to the Department.",
+              "Date": null,
+              "Publisher": "DSB"
+            }
+          },
+          {
+            "node": {
+              "Name": "Defense Innovation Board",
+              "Type": "Website",
+              "Url": "https://innovation.defense.gov/recommendations/",
+              "Description": "The objective is to bring in new perspectives through recommendations relevant to the private sector and academia, encourages the imagination and critical thinking needed to consider new solutions. This process is rapid, creative, collaborative, and ultimately saves time and money while delivering new concepts at the speed of relevance.",
+              "Date": null,
+              "Publisher": "DIB"
+            }
+          },
+          {
+            "node": {
+              "Name": "Acquisition Innovation Research Center",
+              "Type": "Website",
+              "Url": "https://acqirc.org/",
+              "Description": "The Acquisition Innovation Research Center (AIRC) was established in September 2020 by the Department of Defense (DoD) to infuse innovation and alternative disciplines from academia to better respond to rapidly changing threats and technological advances. ",
+              "Date": null,
+              "Publisher": "AIRC"
+            }
+          },
+          {
+            "node": {
+              "Name": "The Digital Engineering - Body of Knowledge (DEBoK)",
+              "Type": "Website",
+              "Url": "https://www.de-bok.org/",
+              "Description": "Systems Engineering Research Center (SERC)",
+              "Date": null,
+              "Publisher": null
+            }
+          },
+          {
+            "node": {
+              "Name": "Guide to Marketing to DoD",
+              "Type": "Website",
+              "Url": "https://business.defense.gov/Work-with-us/Guide-to-working-with-DoD/",
+              "Description": "While it’s not easy, several government resources and tools can help you win your first DoD contract. This step-by-step guide explains how to get started.",
+              "Date": null,
+              "Publisher": "OSBP"
+            }
+          },
+          {
+            "node": {
+              "Name": "RAND Corporation",
+              "Type": "Website",
+              "Url": "https://www.rand.org/pubs/research_reports.html",
+              "Description": "RAND reports present research findings and objective analysis that address the challenges facing the public and private sectors. All RAND reports undergo rigorous peer review to ensure high standards for research quality and objectivity.",
+              "Date": null,
+              "Publisher": "RAND"
+            }
+          },
+          {
+            "node": {
+              "Name": "Army Science Board",
+              "Type": "Website",
+              "Url": "https://asb.army.mil/",
+              "Description": "The Army Science Board (ASB), organized under the Federal Advisory Committee Act (FACA) of 1977, provides the Army with independent advice and recommendations on matters relating to the Army’s scientific, technological, manufacturing, logistics and business management functions, as well as other matters the Secretary of the Army deems important to the Department of the Army. The ASB provides the Army with a resource of world-class scientists, engineers, technologists and operational experts as well as business, policy and managerial specialists from the private sector, academia, non-DoD government agencies and former senior military officers. Our members and consultants volunteer their expertise and time to address those critical national security challenges for which the Army's leadership seeks independent and unbiased technical advice. The ASB focuses on issues of importance to large segments of the Army, and its products are delivered in a candid and timely manner. The Board is composed of 20 parent board members and a number of subcommittee members and consultants. Membership is carefully monitored to ensure that diverse disciplines and points of view are represented. The Secretary of the Army appoints the Chair and Vice Chair from the ASB membership. ASB membership is augmented by a small number of consultants who are appointed to provide specialized expertise for ASB studies.",
+              "Date": null,
+              "Publisher": "Army"
+            }
+          },
+          {
+            "node": {
+              "Name": "National Security Strategy",
+              "Type": "Strategy Documents",
+              "Url": "https://www.whitehouse.gov/wp-content/uploads/2022/10/Biden-Harris-Administrations-National-Security-Strategy-10.2022.pdf",
+              "Description": " The National Security Strategy (NSS) is a report mandated by Section 603 of the Goldwater-Nichols Department of Defense Reorganization Act of 1986 (Public Law 99-433). The NSS has been transmitted annually since 1987, but frequently reports come in late or not at all. The NSS is to be sent from the President to Congress in order to communicate the executive branch’s national security vision to the legislative branch. The NSS provides discussion on proposed uses of all facets of U.S. power needed to achieve the nation’s security goals. The report is obligated to include a discussion of the United States’ international interests, commitments, objectives, and policies, along with defense capabilities necessary to deter threats and implement U.S. security plans.",
+              "Date": "10/1/22",
+              "Publisher": "White House"
+            }
+          },
+          {
+            "node": {
+              "Name": "National Defense Strategy",
+              "Type": "Strategy Documents",
+              "Url": "https://www.defense.gov/National-Defense-Strategy/",
+              "Description": "This strategy sets the strategic direction of the Department to support U.S. national security priorities, and flows directly from President Biden's National Security Strategy. The National Defense Strategy includes the Nuclear Posture Review (NPR) and the Missile Defense Review (MDR).",
+              "Date": "10/7/22",
+              "Publisher": "OSD"
+            }
+          },
+          {
+            "node": {
+              "Name": "Air Force’s Science and Technology Strategy 2030",
+              "Type": "Strategy Documents",
+              "Url": "https://www.af.mil/Portals/1/documents/2019%20SAF%20story%20attachments/Air%20Force%20Science%20and%20Technology%20Strategy.pdf",
+              "Description": "Designed to better identify, develop and deploy breakthrough technologies. The 32-page report is a blueprint for the next decade and beyond. The strategy includes an array of changes allowing the Air Force to maximize – and expand – its technological advantage in the new era of peer-to-peer threats.",
+              "Date": "4/1/19",
+              "Publisher": "USAF"
+            }
+          },
+          {
+            "node": {
+              "Name": "Department of Defense Zero Trust Strategy and Roadmap",
+              "Type": "Strategy Documents",
+              "Url": "https://dodcio.defense.gov/Library/",
+              "Description": "The strategy envisions a DoD Information Enterprise secured by a fully implemented, Department-wide Zero Trust cybersecurity framework that will reduce the attack surface, enable risk management and effective data-sharing in partnership environments, and quickly contain and remediate adversary activities.",
+              "Date": "11/7/22",
+              "Publisher": "DoD CIO"
+            }
+          },
+          {
+            "node": {
+              "Name": "DoD Data Strategy",
+              "Type": "Strategy Documents",
+              "Url": "https://media.defense.gov/2020/Oct/08/2002514180/-1/-1/0/DOD-DATA-STRATEGY.PDF",
+              "Description": "The DoD Data Strategy supports the National Defense Strategy and Digital Modernization by providing the overarching vision, focus areas, guiding principles, essential capabilities, and goals necessary to transform the Department into a data-centric enterprise. Success cannot be taken for granted…it is the responsibility of all DoD leaders to treat data as a weapon system and manage, secure, and use data for operational effect.",
+              "Date": "10/8/22",
+              "Publisher": "CDAO"
+            }
+          },
+          {
+            "node": {
+              "Name": "DoD Strategic Management Plan",
+              "Type": "Strategy Documents",
+              "Url": "https://dam.defense.gov/Performance-Mgmt/",
+              "Description": "The SMP articulates the Secretary of Defense’s strategic priorities, consistent with the National Defense Strategy, with an emphasis on priorities focused on building enduring advantages. ",
+              "Date": "10/28/22",
+              "Publisher": "OSD"
+            }
+          },
+          {
+            "node": {
+              "Name": "NATO Strategic Concept",
+              "Type": "Strategy Documents",
+              "Url": "https://www.nato.int/strategic-concept/",
+              "Description": "The 2022 Strategic Concept was adopted at the Madrid Summit, 29-30 June 2022. Learn more about NATO’s enduring purpose and its fundamental security tasks.",
+              "Date": "6/29/22",
+              "Publisher": "NATO"
+            }
+          },
+          {
+            "node": {
+              "Name": "US Space Force Vision for a Digital Service",
+              "Type": "Strategy Documents",
+              "Url": "https://media.defense.gov/2021/May/06/2002635623/-1/-1/1/USSF%20VISION%20FOR%20A%20DIGITAL%20SERVICE%202021%20(2).PDF",
+              "Description": "he Vision provides a clear description of what it means to be a “Digital Service” and outlines the four areas of focus essential to making this vision a reality.",
+              "Date": "5/6/21",
+              "Publisher": "USSF"
+            }
+          },
+          {
+            "node": {
+              "Name": "Small Business Strategy (DoD)",
+              "Type": "Strategy Documents",
+              "Url": "https://media.defense.gov/2023/Jan/26/2003150429/-1/-1/0/SMALL-BUSINESS-STRATEGY.PDF",
+              "Description": "This Small Business Strategy outlines a Department-wide plan to harness the power of America’s small, innovative, and agile companies and grow their contributions to the defense mission. These initiatives will streamline efforts across DoD in order to make it easier for small businesses to work with DoD, align small business activities to sustain and expand the Department’s diverse and modernized capabilities, and reduce barriers for small businesses to help reverse the declining trend in small business suppliers",
+              "Date": "1/26/23",
+              "Publisher": "DoD"
+            }
+          },
+          {
+            "node": {
+              "Name": "DoD STEM Strategic Plan, FY 2021-2025",
+              "Type": "Strategy Documents",
+              "Url": "https://dodstem.us/about/impact/",
+              "Description": "The Office of the Secretary of Defense (OSD) and the Components are invested in developing current and future STEM talent throughout DoD to meet its unique mission. This Department-wide STEM strategic plan, coupled with its follow-on implementation plan, provides an overarching framework for achieving the DoD STEM mission and vision. These are driven by Federal priorities while addressing and leveraging DoD’s unique mission, needs, and resources.",
+              "Date": "1/1/21",
+              "Publisher": "USD(R&E)"
+            }
+          },
+          {
+            "node": {
+              "Name": "DTIC Strategic Plan, FY 2023-2028",
+              "Type": "Strategy Documents",
+              "Url": "https://discover.dtic.mil/wp-content/uploads/pdfs/dtic_strategic_plan.pdf",
+              "Description": "The Defense Technical Information Center (DTIC) is built around the imperative that when our Nation sends our military into harm’s way it is our responsibility to give them the tools to succeed and return home safely. Over the term of this five-year Strategic Plan, we will keep this responsibility at the forefront of our plans and actions. With the continued support of Office of the Under Secretary Defense for Research & Engineering (OUSD(R&E)), DTIC will improve our ability to preserve, curate, and share knowledge from Department of Defense’s (DoD) $16B/year investment in science and technology (S&T).",
+              "Date": "1/1/23",
+              "Publisher": "DTIC"
+            }
+          },
+          {
+            "node": {
+              "Name": "DoD International Science and Technology Engagement Strategy",
+              "Type": "Strategy Documents",
+              "Url": "https://www.cto.mil/wp-content/uploads/2020/12/Signed-International-ST-Engagement-Strategy.pdf",
+              "Description": "The Strategy focuses on U.S. DoD-led and –managed international S&T endeavors and does not pertain to acquisition, sustainment, testing, or foreign military sales (FMS) which are the purview of other U.S. DoD organizations. ",
+              "Date": "12/11/20",
+              "Publisher": "R&E"
+            }
+          },
+          {
+            "node": {
+              "Name": "Software Modernization Strategy",
+              "Type": "Strategy Documents",
+              "Url": "https://media.defense.gov/2022/Feb/03/2002932833/-1/-1/1/DEPARTMENT-OF-DEFENSE-SOFTWARE-MODERNIZATION-STRATEGY.PDF",
+              "Description": "The DoD Software Modernization Strategy provides the approach for achieving faster delivery of software capabilities in support of Department priorities such as Joint All Domain Command and Control and artificial intelligence. Given this requires the combined focus of DoD senior leadership, I expect all offices and personnel to provide the support necessary to make software modernization a reality",
+              "Date": "2/2/22",
+              "Publisher": "CIO"
+            }
+          },
+          {
+            "node": {
+              "Name": "National Intelligece Strategy",
+              "Type": "Strategy Documents",
+              "Url": "https://www.dni.gov/index.php/newsroom/reports-publications/reports-publications-2023/3713-2023-national-intelligence-strategy",
+              "Description": "\r\nThe 2023 National Intelligence Strategy (NIS) provides the Intelligence Community (IC) with strategic direction from the Director of National Intelligence (DNI) for the next four years. The NIS is a foundational document for the IC and reflects the input of leaders from each of the 18 intelligence elements, as it guides the operations, investments, and priorities of the collective.",
+              "Date": "8/9/23",
+              "Publisher": "DNI"
+            }
+          },
+          {
+            "node": {
+              "Name": "The National Counterintelligence Strategy",
+              "Type": "Strategy Documents",
+              "Url": "https://www.dni.gov/index.php/ncsc-features/2741-the-national-counterintelligence-strategy-of-the-united-states-of-america-2020-2020",
+              "Description": "This National Counterintelligence Strategy of the United States of America, 2020-2022 presents a new perspective on how to effectively address foreign intelligence threats as a nation. Five strategic objectives encompass the most critical areas where foreign intelligence services are targeting the United States: Critical Infrastructure; Key U.S. Supply Chains; the U.S. Economy; American Democracy; and Cyber and Technical Operations.",
+              "Date": "2/10/20",
+              "Publisher": "DNI"
+            }
+          },
+          {
+            "node": {
+              "Name": "DoD Biomanufacturing Strategy",
+              "Type": "Strategy Documents",
+              "Url": "https://www.cto.mil/dod-bioman-strat/",
+              "Description": "The Office of the Under Secretary of Defense for Research and Engineering, informed by the 2022 National Defense Strategy and Executive Order 14081 (Advancing Biotechnology and Biomanufacturing Innovation for a Sustainable, Safe, and Secure American Bioeconomy) spearheaded development of the DoD Biomanufacturing Strategy. DoD will invest in biomanufacturing consistent with this Strategy to catalyze domestic biomanufacturing, protect biomanufacturing at home and with our allies and partners, and secure biotechnology and biosafety.",
+              "Date": "3/22/22",
+              "Publisher": "USD(R&E)"
+            }
+          },
+          {
+            "node": {
+              "Name": "Air Force published its Global Futures Report",
+              "Type": "Strategy Documents",
+              "Url": "https://www.af.mil/News/Article-Display/Article/3360717/air-force-releases-global-futures-report-joint-functions-in-2040/",
+              "Description": "The Air Force Global Futures Report: Joint Functions in 2040 explores four scenarios, or future operating environments, through the lens of the seven joint functions found in U.S. doctrine – Fires, Protection, Movement and Maneuver, Information, Intelligence, Command and Control (C2) and Sustainment.",
+              "Date": "4/12/23",
+              "Publisher": "Air Force"
+            }
+          },
+          {
+            "node": {
+              "Name": "DoD Additive Manufacturing Strategy",
+              "Type": "Strategy Documents",
+              "Url": "https://www.cto.mil/dod-additive-manufacturing-strategy/",
+              "Description": "The Office of the Secretary of Defense Manufacturing Technology (OSD ManTech) Program Office in the Office of the Under Secretary of Defense for Research and Engineering (OUSD(R&E)) released its first-ever comprehensive Additive Manufacturing (AM) Strategy in January 2021. The AM Strategy establishes a common vision for the use of this game-changing technology, which is also known as three-dimensional (3D) printing. OSD ManTech, which is under the Strategic Technology Protection and Exploitation (STP&E) Office in OUSD(R&E), crafted the Strategy in partnership with the Military Services and other defense agencies.",
+              "Date": "1/1/21",
+              "Publisher": "USD(R&E)"
+            }
+          },
+          {
+            "node": {
+              "Name": "Digital Engineering Workforce Plan",
+              "Type": "Strategy Documents",
+              "Url": "https://ac.cto.mil/wp-content/uploads/2022/04/DE-WorkforcePlan-March2022.pdf",
+              "Description": "The U.S. Department of Defense (DoD) requires robust engineering practices to develop weapon systems the nation needs to maintain superiority against threats from adversaries worldwide. To support this effort, the Department is transforming its engineering practices to an approach that incorporates technological innovations into an integrated, digital, model-based approach. This digital engineering approach will require new methods, processes, and tools, which will change the way the engineering community operates. Software plays an essential role in implementing digital engineering and is also discussed in this plan. To succeed in implementing digital engineering, DoD is making a deliberate effort to transform the workforce. This Digital Engineering Workforce Plan seeks to meet the current and emerging needs in acquiring, developing, and retaining qualified government civilian and military staff to achieve the goal of implementing digital engineering.",
+              "Date": "4/1/22",
+              "Publisher": "USD(R&E)"
+            }
+          },
+          {
+            "node": {
+              "Name": "National Defense Science and Technology Strategy",
+              "Type": "Strategy Documents",
+              "Url": "https://media.defense.gov/2023/May/09/2003218877/-1/-1/0/NDSTS-FINAL-WEB-VERSION.PDF",
+              "Description": "Guided by the National Defense Strategy, the NDSTS articulates the science and technology priorities, goals, and investments of the Department and makes recommendations on the future of the defense research and engineering enterprise.",
+              "Date": "5/9/23",
+              "Publisher": "USD(R&E)"
+            }
+          },
+          {
+            "node": {
+              "Name": "Marine Corps: Force Design 2030",
+              "Type": "Strategy Documents",
+              "Url": "https://www.marines.mil/Force-Design-2030/",
+              "Description": "The work of redesigning the Marine Corps is threat informed, concept based, and accountable to a campaign of learning. Strategic guidance calls for a Marine Corps able to survive and thrive inside contested spaces. Developed concepts are tested through experimentation and wargaming. Integrated planning teams study and analyze the concepts for validation and refinement.",
+              "Date": "6/1/23",
+              "Publisher": "Marine Corps"
+            }
+          },
+          {
+            "node": {
+              "Name": "DoD ManTech Program Strategic Plan",
+              "Type": "Strategy Documents",
+              "Url": "https://www.dodmantech.mil/About-Us/DoD-ManTech/",
+              "Description": "The 2022 DoD ManTech Program Strategic Plan focuses on four thrust areas for the next five years.  It provides the basis for the coordination of DoD Service and Agency ManTech efforts and provides plans to our stakeholders, other government entities, industry, and academia. ",
+              "Date": "11/1/22",
+              "Publisher": "ManTech"
+            }
+          },
+          {
+            "node": {
+              "Name": "DoD Cyber Workforce Strategy Implementation Plan",
+              "Type": "Strategy Documents",
+              "Url": "https://www.defense.gov/News/Releases/Release/Article/3481975/cio-signs-2023-2027-dod-cyber-workforce-strategy-implementation-plan/#:~:text=John%20Sherman%20released%20the%202023,flexible%2C%20and%20responsive%20cyber%20workforce.",
+              "Description": "The CWF Workforce Strategy Implementation Plan will assist the Department in advancing talent management initiatives aimed at fostering an agile, flexible, and responsive cyber workforce. This Implementation Plan sets the foundation for how the Department will successfully execute the 22 objectives and 38 initiatives aligned with the 4 overarching goals in the CWF Strategy.",
+              "Date": "8/3/23",
+              "Publisher": "CIO"
+            }
+          },
+          {
+            "node": {
+              "Name": "DOT&E Strategy Implementation Plan",
+              "Type": "Strategy Documents",
+              "Url": "https://www.dote.osd.mil/Publications/",
+              "Description": "The strategy focuses on designing, developing, and managing our forces in a manner that links our operational concepts and capabilities to achieve strategic objectives. This requires a Joint Force that is lethal, suitable, resilient, survivable, agile, and responsive.",
+              "Date": "6/13/22",
+              "Publisher": "DOT&E"
+            }
+          },
+          {
+            "node": {
+              "Name": "DOT&E Strategy",
+              "Type": "Strategy Documents",
+              "Url": "https://www.dote.osd.mil/Publications/",
+              "Description": "We will transform test and evaluation to enable delivery of the world’s most advanced warfighting capabilities at the speed of need.",
+              "Date": "4/24/23",
+              "Publisher": "DOT&E"
+            }
+          },
+          {
+            "node": {
+              "Name": "U.S. Army Corps of Engineers Research & Development Strategy",
+              "Type": "Strategy Documents",
+              "Url": "https://usace.contentdm.oclc.org/digital/collection/p16021coll11/id/5457",
+              "Description": "This Research & Development Strategy, a first for USACE across all mission sets, catapults us into a bold era of R&D that is strategic, collaborative, proactive, and challenge-focused.",
+              "Date": "11/1/21",
+              "Publisher": "Army"
+            }
+          },
+          {
+            "node": {
+              "Name": "Defense Health Agency Strategic Plan 2023-2028",
+              "Type": "Strategy Documents",
+              "Url": "https://www.health.mil/About-MHS/OASDHA/Defense-Health-Agency/DHA-Strategic-Plan",
+              "Description": "The plan is a guide for how the agency will provide a strong, integrated health care delivery system in support of the military departments, combatant commands, and our beneficiaries.",
+              "Date": "8/17/23",
+              "Publisher": "DHA"
+            }
+          },
+          {
+            "node": {
+              "Name": "2023 Strategy for Countering Weapons of Mass Destruction",
+              "Type": "Strategy Documents",
+              "Url": "https://www.defense.gov/News/Releases/Release/Article/3541619/dod-announces-release-of-2023-strategy-for-countering-weapons-of-mass-destructi/",
+              "Description": "The 2023 DOD CWMD Strategy seeks to account for current and emerging WMD challenges and threats, and provide tailored methods to address them. The Department will account for WMD threats holistically to prevent, mitigate, withstand, operate through, and recover from WMD attacks in close consultation with Allies and partners.",
+              "Date": "9/28/23",
+              "Publisher": "OSD"
+            }
+          },
+          {
+            "node": {
+              "Name": "2023 Biodefense Posture Review",
+              "Type": "Strategy Documents",
+              "Url": "https://www.defense.gov/News/Releases/Release/Article/3495836/dod-unveils-collaborative-biodefense-reforms-in-posture-review/",
+              "Description": "Biodefense Posture Review, outlining reforms aimed to posture the department to fight and win in the face of future biothreats.",
+              "Date": "8/17/23",
+              "Publisher": "OSD"
+            }
+          },
+          {
+            "node": {
+              "Name": "Comprehensive Strategy for the Space Force",
+              "Type": "Strategy Documents",
+              "Url": "https://www.spaceforce.mil/Portals/2/Documents/Space%20Policy/CRR-FY23-Comprehensive-Strategy-Space%20Force-15-Aug-23.pdf",
+              "Description": "This report contains a descrption of the strategic objectives for organizing, training, and equpping the Space Force; a detailed plan for those objectives; identification of those units or resources from other Department of Defense organizations that are necessary to achieve the objectives; and identifiation of the officer and enlisted end-strength requirements",
+              "Date": "8/15/23",
+              "Publisher": "Space Force"
+            }
+          },
+          {
+            "node": {
+              "Name": "2023 DoD Cyber Strategy",
+              "Type": "Strategy Documents",
+              "Url": "https://www.defense.gov/News/Releases/Release/Article/3523199/dod-releases-2023-cyber-strategy-summary/",
+              "Description": "The strategy highlights DOD’s actions to invest in and ensure the defense, availability, reliability, and resilience of its cyber networks and infrastructure to support non-DOD agencies in their related roles and to protect the defense industrial base.",
+              "Date": "9/12/23",
+              "Publisher": "OSD"
+            }
+          },
+          {
+            "node": {
+              "Name": "DoD Strategy for Operations in the Information Environment (SOIE)",
+              "Type": "Strategy Documents",
+              "Url": "https://www.defense.gov/News/Releases/Release/Article/3592788/dod-announces-release-of-2023-strategy-for-operations-in-the-information-enviro/",
+              "Description": "The 2023 DOD SOIE will improve the Department's ability to plan, resource, and apply informational power toward integrated deterrence, campaigning, and building enduring advantage as described in the 2022 National Defense Strategy. This will enable the DOD to deter challenges to U.S. vital national interests in any arena or domain.",
+              "Date": "7/5/23",
+              "Publisher": "OSD"
+            }
+          },
+          {
+            "node": {
+              "Name": "Department of the Navy Cyber Strategy",
+              "Type": "Strategy Documents",
+              "Url": "https://media.defense.gov/2023/Nov/21/2003345095/-1/-1/0/DEPARTMENT%20OF%20THE%20NAVY%20CYBER%20STRATEGY.PDF?utm_source=substack&utm_medium=email",
+              "Description": "The strategy features seven distinct lines of effort focused on enhancing the naval services’ cyber posture in alignment with the National Defense Strategy and Department of Defense Cyber Strategy.\r\n\r\nSHARE\r\n\r\nPRINT\r\n\r\nRSS\r\nThe strategy features seven distinct lines of effort focused on enhancing the naval services’ cyber posture in alignment with the National Defense Strategy and Department of Defense Cyber Strategy.",
+              "Date": "11/21/23",
+              "Publisher": "Navy"
+            }
+          },
+          {
+            "node": {
+              "Name": "National Spectrum Strategy",
+              "Type": "Strategy Documents",
+              "Url": "https://www.ntia.gov/issues/national-spectrum-strategy",
+              "Description": "The result is a comprehensive strategy to modernize spectrum policy and make the most efficient use possible of this vital national resource to enhance the quality of life for all Americans. This Strategy will expand access to advanced wireless broadband networks and technologies, whether terrestrial-, airspace-, satellite- or space-based, for all Americans. And it will",
+              "Date": "11/13/23",
+              "Publisher": "White House"
+            }
+          },
+          {
+            "node": {
+              "Name": "Data, Analytics and AI Adoption Strategy",
+              "Type": "Strategy Documents",
+              "Url": "https://www.defense.gov/News/Releases/Release/Article/3577857/deputy-secretary-of-defense-kathleen-hicks-announces-publication-of-data-analyt/",
+              "Description": "As the 2022 National Defense Strategy (NDS) makes clear, the United States possesses strengths that our competitors cannot match, among them our diverse and open society, our culture of ingenuity, our innovation base, and our globe-spanning network of Allies and partners.  The Department leverages these strengths by distributing authority, empowering leaders in our All-Volunteer Force to innovate at the edge and apply their own judgment to combine old and new capabilities into superior operational concepts.  The latest advancements in data, analytics, and artificial intelligence (AI) technologies enable leaders to make better decisions faster, from the boardroom to the battlefield. Therefore, accelerating the adoption of these technologies presents an unprecedented opportunity to equip leaders at all levels of the Department with the data they need, and harness the full potential of the decision-making power of our people. ",
+              "Date": "11/2/23",
+              "Publisher": "OSD"
+            }
+          },
+          {
+            "node": {
+              "Name": "One Navy-Marine Corps Team: Advancing Department of the Navy Priorities",
+              "Type": "Strategy Documents",
+              "Url": "https://www.navy.mil/Press-Office/Press-Releases/display-pressreleases/Article/3567034/secnav-del-toro-releases-one-navy-marine-corps-team-advancing-department-of-the/",
+              "Description": "The document informs activities within the Department of the Navy to include planning, investments, budgeting, and prioritization of personnel and resources.",
+              "Date": "10/26/23",
+              "Publisher": "Navy"
+            }
+          },
+          {
+            "node": {
+              "Name": "FY24 Investment Strategy for the Office of Strategic Capital",
+              "Type": "Strategy Documents",
+              "Url": "https://www.defense.gov/News/Releases/Release/Article/3700624/dod-announces-release-of-fy24-investment-strategy-for-the-office-of-strategic-c/",
+              "Description": "The Investment Strategy presents a guiding framework for OSC programs to complement existing DoD and U.S. government programs. It also addresses how OSC determined which technology areas to prioritize for its initial program activities, based on rigorous analysis of national security applications, U.S. market competitiveness, and capital needs for critical technology industries.",
+              "Date": "3/8/24",
+              "Publisher": "OSD"
+            }
+          },
+          {
+            "node": {
+              "Name": "The National Defense Industrial Strategy (NDIS) Enabling a Modernized Defense Industrial Ecosystem",
+              "Type": "Strategy Documents",
+              "Url": "https://www.businessdefense.gov/NDIS.html",
+              "Description": "Guides the Department's engagement, policy development, and investment in the industrial base over the next three to five years. Taking its lead from the National Defense Strategy (NDS), this strategy will catalyze generational change from the existing defense industrial base to a more robust, resilient, and dynamic modernized defense industrial ecosystem.",
+              "Date": "1/11/24",
+              "Publisher": "OSD"
+            }
+          },
+          {
+            "node": {
+              "Name": "DHA Strategic Plan",
+              "Type": "Strategy Documents",
+              "Url": "https://www.health.mil/About-MHS/OASDHA/Defense-Health-Agency/DHA-Strategic-Plan",
+              "Description": "The Defense Health Agency issued the DHA Strategic Plan for Fiscal Years 2023-2028.",
+              "Date": "7/31/23",
+              "Publisher": "DHA"
+            }
+          },
+          {
+            "node": {
+              "Name": "DHRA Strategic Plan",
+              "Type": "Strategy Documents",
+              "Url": "https://www.dhra.mil/Portals/52/Documents/DHRA-Strategic-Plan-FY2022-2028_Base_Plan_Final_External.pdf",
+              "Description": "Our mission is to execute and enhance DoD programs.  To enhance our programs in a fiscally constrained environment, we will return to the basics.  Our focus will be on three priorities: (1) enriching our culture of service; (2) reinforcing our enterprise; and, (3) maturing our programs. ",
+              "Date": "10/13/21",
+              "Publisher": "DHRA"
+            }
+          },
+          {
+            "node": {
+              "Name": "Navy S&T Strategy",
+              "Type": "Strategy Documents",
+              "Url": "https://www.nre.navy.mil/our-research/strategy",
+              "Description": "Research at ONR is guided by the principles set forth in Secretary of the Navy Carlos Del Toro's 2024 Naval Science and Technology (S&T) Strategy. This Strategy provides our sailing directions to deliver enduring technical advantage for the Sailors, Marines, Joint Warfighters, as well as partner nations we have the privilege of serving. The Strategy is our collective global call to service for scientists, engineers, inventors and innovators from academia, industry, government and more to work with us on solving naval challenges.",
+              "Date": "4/9/24",
+              "Publisher": "Navy"
+            }
+          },
+          {
+            "node": {
+              "Name": "Acqusition Research Program Newsletter",
+              "Type": "Publications",
+              "Url": "https://nps.edu/web/acqnresearch/newsletter",
+              "Description": "The Acquisition Research Program publishes a weekly email newsletter, Need to Know, in which we highlight key developments in acquisition, policy, government innovation, and research—as well as the latest news about ARP events and research. We hope you enjoy the newsletter, and let us know if you are doing work we can highlight in future issues.",
+              "Date": null,
+              "Publisher": "NPS"
+            }
+          },
+          {
+            "node": {
+              "Name": "Army Publications",
+              "Type": "Publications",
+              "Url": "https://www.army.mil/publications/",
+              "Description": "A list of Army Publications",
+              "Date": null,
+              "Publisher": "Army"
+            }
+          },
+          {
+            "node": {
+              "Name": "Army University Press",
+              "Type": "Publications",
+              "Url": "https://www.armyupress.army.mil/",
+              "Description": "Army University Press – the US Army’s premier multimedia organization – focuses on advancing the ideas and insights military professionals need to lead and succeed. Army University Press is the Army’s entry point for cutting-edge thought and discussion on topics important to the Army and national defense. Through its suite of publication platforms and educational services, Army University Press makes timely and relevant information available to leaders in the military, government, and academia.",
+              "Date": null,
+              "Publisher": "Army"
+            }
+          },
+          {
+            "node": {
+              "Name": "DEVCOM Chemical and Biological Center",
+              "Type": "Publications",
+              "Url": "https://www.cbc.devcom.army.mil/press-room/publications/",
+              "Description": "DEVCOM Chemical and Biological Center",
+              "Date": null,
+              "Publisher": "DEVCOM Chemical and Biological Center"
+            }
+          },
+          {
+            "node": {
+              "Name": "Army AL&T Magazine",
+              "Type": "Publications",
+              "Url": "https://asc.army.mil/web/publications/army-alt-magazine/",
+              "Description": "Army AL&T magazine is USAASC’s quarterly professional journal, comprising in-depth, analytically focused articles. The magazine’s mission is to instruct members of the Army AL&T community about AL&T processes, procedures, techniques and management philosophy; it is also to disseminate information pertinent to the professional development of workforce members and others engaged in AL&T activities.",
+              "Date": null,
+              "Publisher": "ASA(ALT)"
+            }
+          },
+          {
+            "node": {
+              "Name": "Defense Acquisition Magazine",
+              "Type": "Publications",
+              "Url": "https://www.dau.edu/library/defense-atl/",
+              "Description": "Defense ATL magazine is a vehicle for transmitting information on policies, trends, events, ad current thinking affecting program management and Defense Acquisition, Technology and Logistics. As the flagship publication of the Defense Acquisition University, Defense ATL also disseminates information on training and education, continuous learning, and e-Learning to those acquisition professionals serving in career positions covered by the Defense Acquisition Workforce Improvement Act DAWIA.",
+              "Date": null,
+              "Publisher": "DAU"
+            }
+          },
+          {
+            "node": {
+              "Name": "Acquisition Innovation Research Center Publications",
+              "Type": "Publications",
+              "Url": "https://acqirc.org/publications/",
+              "Description": "The Acquisition Innovation Research Center (AIRC) was established in September 2020 by the Department of Defense (DoD) to infuse innovation and alternative disciplines from academia to better respond to rapidly changing threats and technological advances. ",
+              "Date": null,
+              "Publisher": "AIRC"
+            }
+          },
+          {
+            "node": {
+              "Name": "Rand Arroyo Center",
+              "Type": "Publications",
+              "Url": "https://www.rand.org/ard/pubs.html",
+              "Description": "As an FFRDC, Arroyo enables the Army to maintain a strategic relationship with an independent, nonprofit source of high-quality, objective analysis that can sustain deep expertise in domains of direct relevance to perennial Army concerns.",
+              "Date": null,
+              "Publisher": "RAND"
+            }
+          },
+          {
+            "node": {
+              "Name": "NSIN Funding Opportunites Newsletter",
+              "Type": "Publications",
+              "Url": "https://www.linkedin.com/newsletters/6986685048288661504/",
+              "Description": "A concise summary of NSIN and defense innovation news and events, funding opportunities, and ways to get involved. Reading time is usually less than 3 minutes.",
+              "Date": null,
+              "Publisher": "NSIN"
+            }
+          },
+          {
+            "node": {
+              "Name": "The Pulse Newsletter (Technology Licensing/Transfer)",
+              "Type": "Publications",
+              "Url": "https://techlinkcenter.org/news",
+              "Description": "Get monthly updates on technology licensing opportunities, plus stay informed about the latest DOD and VA technology transfer news.",
+              "Date": null,
+              "Publisher": "Techlink"
+            }
+          },
+          {
+            "node": {
+              "Name": "Insight Magazine",
+              "Type": "Publications",
+              "Url": "https://www.dcma.mil/News/INSIGHT-Magazine/",
+              "Description": "The INSIGHT magazine tells the agency’s warfighter-support story and highlights our global acquisition professionals who use insight and expertise to enhance that story each day. The articles feature our people, our numbers and our deliveries. Click inside to discover how we manage taxpayer money, how we are making space exploration more affordable, how we're helping defeat COVID-19 and much more. INSIGHT encapsulates our mission, our values and our commitment to America’s warfighters.",
+              "Date": null,
+              "Publisher": "DMCA"
+            }
+          },
+          {
+            "node": {
+              "Name": "Army Sustainment Magazine",
+              "Type": "Publications",
+              "Url": "https://alu.army.mil/alog/",
+              "Description": "Army Sustainment's mission is to publish timely, authoritative information on Army and Department of Defense sustainment plans, programs, policies, operations, procedures, and doctrine for the benefit of all Army personnel. Its purpose is to provide a medium for disseminating and exchanging sustainment news and information and a forum for expressing original, creative, innovative thought about sustainment.",
+              "Date": null,
+              "Publisher": "Army"
+            }
+          },
+          {
+            "node": {
+              "Name": "NGA Tearline",
+              "Type": "Publications",
+              "Url": "https://www.tearline.mil/",
+              "Description": "The National Geospatial-Intelligence Agency (NGA) is partnering with non-profit groups to create public-facing, open source intelligence on various strategic, economic, and humanitarian intelligence topics that tend to be under-reported within in-depth or long-form formats. This open source content is created for three purposes: (1) citation and usage for internal purposes, (2) strengthening analytic outreach, and (3) growing public trust by increasing transparency around a shared interest in various intelligence topics that are fit for public collaboration. The Tearline Project aligns with Intelligence Community Directive 205 to expand analytic outreach with outside expert groups to grow alternative ideas and new knowledge bases. The NGA Tearline Project delivers real-world analytic outreach content transparently. For this work, the NGA Tearline Project received the IC Transparency Team of the Year Award from the Office of the Director of National Intelligence.",
+              "Date": null,
+              "Publisher": "NGA"
+            }
+          },
+          {
+            "node": {
+              "Name": "Cyber Defense Review",
+              "Type": "Publications",
+              "Url": "https://cyberdefensereview.army.mil/",
+              "Description": "The Cyber Defense Review (CDR) journal is a scholarly journal published by the West Point Press with support from the Army Cyber Institute (ACI) at West Point. The CDR generates an intellectual multidisciplinary dialogue through thought provoking scholarly articles and essays on the strategic, operational, and tactical aspects of the cyber domain. The CDR breaks down barriers and fosters innovative solutions to global cybersecurity challenges. The CDR compiles perspectives from preeminent thinkers across the government, industry, and academia regarding potential challenges, impacts, and initiatives for consideration as we solve over-the-horizon problems for the Army and the Nation.",
+              "Date": null,
+              "Publisher": "Army"
+            }
+          },
+          {
+            "node": {
+              "Name": "Linked Into AFRL",
+              "Type": "Publications",
+              "Url": "https://www.linkedin.com/newsletters/linked-into-afrl-7046920952894410752/",
+              "Description": "Science and Technology for the United States Air Force & Space Force",
+              "Date": null,
+              "Publisher": "AFRL"
+            }
+          },
+          {
+            "node": {
+              "Name": "Product Support Pulse Newsletter",
+              "Type": "Publications",
+              "Url": "https://www.acq.osd.mil/log/PS/PS_Communications.html",
+              "Description": "The ODASD(PS)’s goals are to provide the DoD with policy, processes, and guidance that foster effective product support planning and execution; provide DoD leadership with comprehensive, timely, and actionable program assessments for product support; lead logistics workforce policy, training, and recognition; and foster cooperation and initiatives for product support with international allies.",
+              "Date": null,
+              "Publisher": "ODASD(PS)"
+            }
+          },
+          {
+            "node": {
+              "Name": "OSD ManTech Newsletter",
+              "Type": "Publications",
+              "Url": "https://www.dodmantech.mil/News/",
+              "Description": "United States manufacturing and innovation are essential to American economic and national security.  Maintaining U.S. influence and access to markets in a stable global environment contributes to our prosperity and standard of living.  It is the responsibility of the Department of Defense (DoD) to innovate and equip our forces with the best tools possible.  The DoD Manufacturing Technology (ManTech) enterprise uses advanced manufacturing to execute the National Defense Strategy priorities – defending the homeland, deterring strategic attacks, deterring aggression, and building a resilient Joint Force and defense ecosystem.",
+              "Date": null,
+              "Publisher": "ManTech"
+            }
+          },
+          {
+            "node": {
+              "Name": "The Innovator (DLA)",
+              "Type": "Publications",
+              "Url": "https://www.dla.mil/Information-Operations/Research-And-Development/",
+              "Description": "The Innovator is electronically published quarterly with articles and information for employees on research and development projects, updates, and upcoming events and activities.",
+              "Date": null,
+              "Publisher": "DLA"
+            }
+          },
+          {
+            "node": {
+              "Name": "USACE Power of R&D Newsletter",
+              "Type": "Publications",
+              "Url": "https://www.dvidshub.net/publication/1366/power-of-rd-newsletter",
+              "Description": "This newsletter aims to highlight and promote U.S. Army Corps of Engineers research and development, along with the engineers and scientists leading that research. Primarily, this newsletter is the journalistic arm of USACE Commanding General LTG Scott Spellmon's mission to elevate R&D within and beyond USACE. The newsletter provides abstracts of longer, feature articles that can be found on USACE's website",
+              "Date": null,
+              "Publisher": "Army"
+            }
+          },
+          {
+            "node": {
+              "Name": "JSTO In the News",
+              "Type": "Publications",
+              "Url": "https://www.dvidshub.net/publication/538/jsto-in-the-news",
+              "Description": "JSTO in the News highlights the scientific accomplishments and breakthroughs of DTRA-JSTO,as we work to find and deploy technologies against chemical and biological agents facing our warfighters and the nation.",
+              "Date": null,
+              "Publisher": "DTRA"
+            }
+          },
+          {
+            "node": {
+              "Name": "Special Warfare",
+              "Type": "Publications",
+              "Url": "https://www.swcs.mil/Special-Warfare-Journal/",
+              "Description": "The Official Professional Bulletin of U.S. Army Special Operations Forces",
+              "Date": null,
+              "Publisher": "SOCOM"
+            }
+          },
+          {
+            "node": {
+              "Name": "Navy SBIR-STTR Transitions Newsletter",
+              "Type": "Publications",
+              "Url": "https://navystp.com/transitions-newsletters/",
+              "Description": "Navy Transitions Newsletter",
+              "Date": null,
+              "Publisher": "Navy"
+            }
+          },
+          {
+            "node": {
+              "Name": "DVIDS list of Podcasts",
+              "Type": "Podcast",
+              "Url": "https://www.dvidshub.net/podcast",
+              "Description": "List of Podcasts across the Department",
+              "Date": null,
+              "Publisher": "Multiple"
+            }
+          },
+          {
+            "node": {
+              "Name": "Defense Mavericks",
+              "Type": "Podcast",
+              "Url": "https://tradewindai.com/",
+              "Description": "Welcome to Defense Mavericks, the podcast that uncovers the untapped potential of AI within the federal government. Join us as we dive into authentic and disruptive conversations with our nation’s brightest minds, offering a fresh perspective on how to gain an unfair advantage through the adoption of new, emerging technology. Our goal is to equip you with the knowledge, education, and best practices you need to shorten the learning curve toward government transformation.",
+              "Date": null,
+              "Publisher": "Chief Digital and Artifical Intelligence Office (CDAO)"
+            }
+          },
+          {
+            "node": {
+              "Name": "Lab Life Podcast",
+              "Type": "Podcast",
+              "Url": "https://afresearchlab.com/lab-life/lab-life-podcast/",
+              "Description": "Supersonic flight. GPS. Space food. Big developments come out of the Air Force Research Laboratory. The Lab Life Podcast brings you behind the scenes with the Air Force and Space Force scientists, engineers and professionals who are developing tomorrow’s technology, today. Each month your podcast hosts, Michele Miller and Kenneth McNulty, speak to new guests about life in the lab.",
+              "Date": null,
+              "Publisher": "Air Force Research Laboratory (AFRL)"
+            }
+          },
+          {
+            "node": {
+              "Name": "The Contracting Experience",
+              "Type": "Podcast",
+              "Url": "https://open.spotify.com/show/0mOAoOK6GV8R3XSwOYfAVK",
+              "Description": "The Contracting Experience connects government contracting professionals to the world around them through conversations with acquisition influencers, insights into evolving hot topics, and by sharing lessons learned from the field.",
+              "Date": null,
+              "Publisher": "Air Force Materiel Command (AFMC)"
+            }
+          },
+          {
+            "node": {
+              "Name": "Equiping the Corps",
+              "Type": "Podcast",
+              "Url": "https://www.marcorsyscom.marines.mil/News/Equipping-the-Corps/",
+              "Description": "Conversations about Marine Corps acquisition, innovation, and gear with host Tripp Elliott, MCSC Head of Command Safety. Equipping the Corps is the official podcast of Marine Corps Systems Command.",
+              "Date": null,
+              "Publisher": "Marine Corps Systems Command (MCSC)"
+            }
+          },
+          {
+            "node": {
+              "Name": "Platfom One (P1) Pod",
+              "Type": "Podcast",
+              "Url": "https://www.dvidshub.net/unit/AFLCMC",
+              "Description": "The Platform One (P1) podcast is a place to openly discuss the challenges of performing DevSecOps in the Department of Defense.",
+              "Date": null,
+              "Publisher": "Air Force Lifecycle Management Center (AFLCMC)"
+            }
+          },
+          {
+            "node": {
+              "Name": "Voices from DARPA",
+              "Type": "Podcast",
+              "Url": "https://www.darpa.mil/about-us/podcast",
+              "Description": "Voices from DARPA, offers a revealing and informative window on the minds of the Agency's program managers. In each episode, a program manager from one of DARPA’s six technical offices—Biological Technologies, Defense Sciences, Information Innovation, Microsystems Technology, Strategic Technology, and Tactical Technology—will discuss in informal and personal terms why they are at DARPA and what they are up to. The goal of Voices from DARPA is to share with listeners some of the institutional know-how, vision, process, and history that together make the “secret sauce” DARPA has been adding to the Nation’s innovation ecosystem for nearly 60 years. On another level, we at DARPA just wanted to share the pleasure we all have every day—in the elevator, in the halls, in our meeting rooms—as we learn from each other and swap ideas and strive to change what’s possible.",
+              "Date": null,
+              "Publisher": "Defense Advanced Research Projects Agency (DARPA)"
+            }
+          },
+          {
+            "node": {
+              "Name": "NavalX Connect Podcast",
+              "Type": "Podcast",
+              "Url": "https://www.secnav.navy.mil/agility/Pages/Archive/podcast.aspx",
+              "Description": "Collaboration equals innovation and it allows us to know more than we are capable of knowing by ourselves. Agility is being flexible and adapting to complete the mission.",
+              "Date": null,
+              "Publisher": "NavalX"
+            }
+          },
+          {
+            "node": {
+              "Name": "The Convergence: An Army Mad Scientist Podcast",
+              "Type": "Podcast",
+              "Url": "https://madsciblog.tradoc.army.mil/",
+              "Description": "The Convergence is an Army Mad Scientist podcast with a distinct focus on divergent viewpoints, a challenging of assumptions, and insights from thought leaders and subject matter experts. The purpose of \"The Convergence\" is to explore technological, economic, and societal trends that disrupt the operational environment and to get a diversity of opinions on the character of warfare.",
+              "Date": null,
+              "Publisher": "Army Futures Command (AFC)"
+            }
+          },
+          {
+            "node": {
+              "Name": "Air Force Innovation Connect",
+              "Type": "Podcast",
+              "Url": "https://www.youtube.com/@dafchiefdataandaioffice/featured",
+              "Description": "Managed by the Department of the Air Force (DAF) Chief Data Office Strategic Communications team, it contains official news and information from the DAF Chief Data and AI Office. '",
+              "Date": null,
+              "Publisher": "Air Force"
+            }
+          },
+          {
+            "node": {
+              "Name": "Air Force Doctrine Podcast",
+              "Type": "Podcast",
+              "Url": "https://www.af.mil/News/Radio/mod/1781/details/527/",
+              "Description": "Air Force Doctrine Podcast is the podcast of the LeMay Center for Doctrine Development & Education at Maxwell Air Force Base, Alabama. This podcast explores timely topics of interest regarding current and emerging doctrine to educate, inspire, and develop Airmen and Guardians. Guests will include a range of Service professionals and experts with vast knowledge and experience on a variety of military doctrine-related topics. Deciphering Doctrine episodes are one in collaboration with Squadron Officer School - Air University Advanced Research Elective.",
+              "Date": null,
+              "Publisher": "Air Force"
+            }
+          },
+          {
+            "node": {
+              "Name": "SOFCAST",
+              "Type": "Podcast",
+              "Url": "https://www.socom.mil/SOFcast/Pages/default.aspx",
+              "Description": "SOFcast is the U.S. Special Operations Command official podcast where we harness the power of storytelling to connect you directly to thought-provoking and unique perspectives from our force. The Special Operations Command Enterprise consists of special operations personnel and enablers from across all of the military services and this podcast is a rare opportunity to hear their stories directly from those that lived them!",
+              "Date": null,
+              "Publisher": "USSOCOM"
+            }
+          },
+          {
+            "node": {
+              "Name": "NIWC Atlantic Technically Speaking Podcast",
+              "Type": "Podcast",
+              "Url": "https://www.niwcatlantic.navy.mil/technically-speaking-podcast/",
+              "Description": "NIWC Atlantic",
+              "Date": null,
+              "Publisher": "NIWC Atlantic"
+            }
+          },
+          {
+            "node": {
+              "Name": "DIA Connections",
+              "Type": "Podcast",
+              "Url": "https://www.niwcatlantic.navy.mil/Media/Podcast/",
+              "Description": "DIA Connections is an exciting podcast that features overlooked or unfamiliar aspects of DIA, including what we do and the countless ways we've impacted the lives of people around the world. Since its creation in 1961, DIA has been the Nation's premier all-source military intelligence organization. Our team at DIA deploys globally, alongside warfighters and interagency partners, to defend America's national security interests. But, as this podcast series reveals, we are so much more.",
+              "Date": null,
+              "Publisher": "DIA"
+            }
+          },
+          {
+            "node": {
+              "Name": "Bridging Tech Podcast",
+              "Type": "Podcast",
+              "Url": "https://www.socaltechbridge.org/podcast",
+              "Description": "The SoCal Tech Bridge Podcast is focused on leveraging the Southern California convergence of Installations, Industry, and Research to unlock emerging technology through non-traditional partnerships.",
+              "Date": null,
+              "Publisher": "NavalX"
+            }
+          },
+          {
+            "node": {
+              "Name": "CENTCAST: The official podcast of U.S. Central Command",
+              "Type": "Podcast",
+              "Url": "https://www.centcom.mil/MEDIA/CENTCAST/",
+              "Description": "CENTCAST is the official podcast of US Central Command, the United States military organization responsible for the security of the Middle East. Headquartered in Tampa, Florida, US Central Command - or CENTCOM - is America's premiere warfighting command.",
+              "Date": null,
+              "Publisher": "USCENTCOM"
+            }
+          },
+          {
+            "node": {
+              "Name": "Tesseract Podcast",
+              "Type": "Podcast",
+              "Url": "https://open.spotify.com/show/3Rq1RCfAkefo5Vi2qtkyeJ",
+              "Description": "Our mission at Tesseract is to Empower Airmen, Connect them to resources, and Accelerate Change across the Air Force Logistics Enterprise. This is our official podcast! Tesseract Podcast gives you the perspective, tools, and techniques from experts about innovation. You‘ll hear from team members that provide context about Tesseract‘s role at the Pentagon and from Airmen working in the field. Tesseract Podcast also interviews authors, senior leaders, subject matter experts, and other unique individuals across industries to leverage the creative genes of Air Force Airmen.",
+              "Date": null,
+              "Publisher": "Tesseract"
+            }
+          },
+          {
+            "node": {
+              "Name": "The High Ground: Offical SMDC Podcast",
+              "Type": "Podcast",
+              "Url": "https://www.dvidshub.net/podcast/445/the-high-ground",
+              "Description": "\"The High Ground\" is the official podcast of U.S. Army Space and Missile Defense Command. Produced at USASMDC Headquarters at Redstone Arsenal, Alabama, content is provided by SMDC Public Affairs assets across the globe. The flagship news and information episodes are released monthly, supplemented by \"Special Edition\" episodes whenever unique content is available. For questions about The High Ground podcast, email the SMDC PAO team at: usarmy.redstone.smdc.mbx.public-affairs@mail.mil You can also visit us on the web at www.smdc.army.mil",
+              "Date": null,
+              "Publisher": "Army Space and Missile Defense Command (SMDC)"
+            }
+          },
+          {
+            "node": {
+              "Name": "Phoenix Cast",
+              "Type": "Podcast",
+              "Url": "https://open.spotify.com/show/2GlFuLyTKg2MbADNdkg5a5",
+              "Description": "A podcast about cybersecurity, technology and innovation issues in the military.",
+              "Date": null,
+              "Publisher": "Marine Corps"
+            }
+          },
+          {
+            "node": {
+              "Name": "Invisible Battlefields: Inside the Science of Chemical and Biological Defense",
+              "Type": "Podcast",
+              "Url": "https://www.dtra.mil/About/Mission/Research-and-Development/Invisible-Battlefields/",
+              "Description": "Invisible Battlefields is a podcast meant to engage with the Chemical and Biological defense community and is another platform providing a voice highlighting the continuous collaborations that the DTRA JSTO program explores with industry partners, academia, and other government agencies concerning chemical and biological threats and protecting our Joint Force against them.",
+              "Date": null,
+              "Publisher": "DTRA"
+            }
+          },
+          {
+            "node": {
+              "Name": "Breaking Doctrine",
+              "Type": "Podcast",
+              "Url": "https://usacac.army.mil/Organizations/Centers-of-Excellence-CoE/MCCoE/CADD/Breaking-Doctrine-Podcasts",
+              "Description": "This podcast will explore timely topics of interest, regarding current and emerging Army and joint doctrine. Our guests will include a broad range of Army and other Service professionals with the vast knowledge and years of experience required to facilitate discussion on a variety of military doctrine-related topics.",
+              "Date": null,
+              "Publisher": "Army"
+            }
+          },
+          {
+            "node": {
+              "Name": "Leader Up",
+              "Type": "Podcast",
+              "Url": "https://armyuniversity.edu/amsc/podcast",
+              "Description": "Leader Up, a podcast by the Army Management Staff College (AMSC), discusses a broad range of leadership and leader development topics with an emphasis on the Army Civilian Professional.",
+              "Date": null,
+              "Publisher": "Army"
+            }
+          },
+          {
+            "node": {
+              "Name": "NCO Journal Podcasts",
+              "Type": "Podcast",
+              "Url": "https://www.dvidshub.net/unit/NCOJ",
+              "Description": "The NCO Journal Podcast supports the training, education, and professional development of the U.S. Army's NCO Corps by providing a forum for the open exchange of ideas, information, and solutions.",
+              "Date": null,
+              "Publisher": "Army"
+            }
+          },
+          {
+            "node": {
+              "Name": "The Spear",
+              "Type": "Podcast",
+              "Url": "https://mwi.westpoint.edu/category/podcasts/the-spear/",
+              "Description": "The Spear is a podcast from the Modern War Institute at West Point. It sets out to explore the combat experience, with each episode featuring a guest who tells a detailed and personal story, describing the events and exploring topics like decision-making under stress and what it feels like to be in combat.",
+              "Date": null,
+              "Publisher": "Army"
+            }
+          },
+          {
+            "node": {
+              "Name": "Urban Warfare Project Podcast",
+              "Type": "Podcast",
+              "Url": "https://mwi.westpoint.edu/category/podcasts/urban-warfare-project-podcasts/",
+              "Description": "As the world is increasingly urbanized, military forces must be prepared for cities to become battlefields. The Urban Warfare Project Podcast, from the Modern War Institute at West Point, features insightful discussions with scholars and practitioners as it sets out to explore the unique characteristics of urban warfare.",
+              "Date": null,
+              "Publisher": "Army"
+            }
+          },
+          {
+            "node": {
+              "Name": "Social Science of War",
+              "Type": "Podcast",
+              "Url": "https://mwi.westpoint.edu/category/podcasts/social-science-of-war/",
+              "Description": "A production of the Department of Social Sciences at the United States Military Academy, the Social Science of War podcast brings together leading research and practitioner perspective to tackle some of the biggest challenges facing the US Army.",
+              "Date": null,
+              "Publisher": "Army"
+            }
+          },
+          {
+            "node": {
+              "Name": "The War Room",
+              "Type": "Podcast",
+              "Url": "https://warroom.armywarcollege.edu/category/podcasts/",
+              "Description": "This is the podcast of WAR ROOM, the official online journal of the U.S. Army War College. Join us for provocative discussions about U.S. national security and defense, featuring prominent national security and military professionals.",
+              "Date": null,
+              "Publisher": "Army"
+            }
+          },
+          {
+            "node": {
+              "Name": "Decisive Point",
+              "Type": "Podcast",
+              "Url": "https://publications.armywarcollege.edu/USAWC-Press/Podcasts/mod/76122/details/582/",
+              "Description": "Decisive Point, the Parameters podcast companion series, furthers the education and professional development of senior military officers and members of the government and academia who are concerned with national security affairs. The podcast debuted in August 2020 and spans four seasons and more than 100 episodes, featuring Parameters authors discussing the research presented in their articles. Episodes range from 10–15 minutes long and cover various topics, including foreign policy, strategy, military history, gender-related issues, counterinsurgency, Landpower, and more.",
+              "Date": null,
+              "Publisher": "Army"
+            }
+          },
+          {
+            "node": {
+              "Name": "Conversations on Strategy",
+              "Type": "Podcast",
+              "Url": "https://publications.armywarcollege.edu/USAWC-Press/Podcasts/mod/76122/details/582/",
+              "Description": "Conversations on Strategy features quick analyses of timely strategic issues. Topics are geared toward senior military officials, government leaders, academicians, strategists, historians, and thought leaders interested in foreign policy, strategy, history, counterinsurgency, and more. The series first aired in March 2022 and includes more than 25 episodes that range in length from 15–30 minutes long. Guests include Press authors and subject matter experts from the US Army War College and other PME and academic institutions who discuss hot topics like the Russia-Ukraine War, China, Taiwan, artificial intelligence, manned-unmanned teaming, infrastructure, terrorism, urban warfare, the Middle East, and more.",
+              "Date": null,
+              "Publisher": "Army"
+            }
+          },
+          {
+            "node": {
+              "Name": "China Landpower Studies Center Dialogues",
+              "Type": "Podcast",
+              "Url": "https://publications.armywarcollege.edu/USAWC-Press/Podcasts/mod/76122/details/582/",
+              "Description": "The China Landpower Studies Center tackles complex and pressing questions about China’s emergence as a global power and its implications for the US military. The podcast will use Strategic Landpower as the focal point of discussion—providing unique and important insights that cut across the aperture of the levers of power. The forum provides senior leaders and practitioners with a better understanding of the strategies, capabilities, and the integration of the PLA into the CCP’s campaign to turn the rules-based international order to its advantage. Further, the podcast will share insights and recommendations for developing better deterrence strategies and campaigns for the United States and our allies.",
+              "Date": null,
+              "Publisher": "Army"
+            }
+          },
+          {
+            "node": {
+              "Name": "SSI Live",
+              "Type": "Podcast",
+              "Url": "https://publications.armywarcollege.edu/USAWC-Press/Podcasts/mod/76122/details/582/",
+              "Description": "USAWC professors and esteemed guests discuss topics ranging from military strategy to geopolitical issues. The US Army War College Press produces \"Decisive Point\" as a companion series to the quarterly journal \"Parameters\". In \"SSI Live,\" professors discuss wide-ranging military topics.",
+              "Date": null,
+              "Publisher": "Army"
+            }
+          },
+          {
+            "node": {
+              "Name": "Pineland Underground Podcast",
+              "Type": "Podcast",
+              "Url": "https://www.swcs.mil/P-U-Podcast/",
+              "Description": "The Official podcast of the U.S. Army John F. Kennedy Special Warfare Center and School. Psychological Operations officer, Major Ashley “Ash” Holzmann, and Civil Affairs NCO, Sergeant Major Derek Riley, embark on a journey to provide the best podcast in the military with bi-monthly relentless awesomeness.",
+              "Date": null,
+              "Publisher": "Army"
+            }
+          },
+          {
+            "node": {
+              "Name": "A Confused Heap of Facts",
+              "Type": "Podcast",
+              "Url": "https://podcasts.apple.com/us/podcast/confused-heap-of-facts/id1702195183",
+              "Description": "Historians from CGSC Dep of Military History discussion topics in military history, ranging from antiquity to near-present",
+              "Date": null,
+              "Publisher": "Army"
+            }
+          },
+          {
+            "node": {
+              "Name": "Defense Acqusition Research Journal",
+              "Type": "Journal",
+              "Url": "https://www.dau.edu/library/arj/",
+              "Description": "The Defense Acquisition Research Journal (ARJ) is a scholarly peer reviewed journal published by the Defense Acqusition University",
+              "Date": null,
+              "Publisher": "DAU"
+            }
+          },
+          {
+            "node": {
+              "Name": "DTIC Pub Defense",
+              "Type": "Journal",
+              "Url": "https://publicaccess.dtic.mil/search/#/pubdefense/simpleSearch",
+              "Description": "Peer-reviewed scholarly publications that are the result of DoD and ODNI/IARPA-funded research.",
+              "Date": null,
+              "Publisher": "DTIC"
+            }
+          },
+          {
+            "node": {
+              "Name": "Air & Space Operations Review",
+              "Type": "Journal",
+              "Url": "https://www.airuniversity.af.edu/ASOR/",
+              "Description": "Operations-focused peer-reviewed journal of the flagship journal effort of the Department of the Air Force. The journal seeks to foster intellectual discussion and debate among airpower and spacepower practitioners and leaders at home and abroad.",
+              "Date": null,
+              "Publisher": "Air University"
+            }
+          },
+          {
+            "node": {
+              "Name": "Æther: A Journal of Strategic Airpower & Spacepower (Æther)",
+              "Type": "Journal",
+              "Url": "https://www.airuniversity.af.edu/AetherJournal/About/",
+              "Description": "Æther provides a forum for critically examining, informing, and debating national and international security matters as they relate to airpower and spacepower. Contributions to Æther will explore issues relevant to national and international security as they relate to national and international airpower and spacepower.",
+              "Date": null,
+              "Publisher": "Air University"
+            }
+          },
+          {
+            "node": {
+              "Name": "Journal of DoD Research and Engineering (JDR&E)",
+              "Type": "Journal",
+              "Url": "https://www.dodtechipedia.mil/dodwiki/pages/viewpage.action?pageId=295567374&utm_medium=eblast&utm_source=public&utm_campaign=jdr&e_V5_I4_january_eblast_2023&utm_term=jdre_home_page",
+              "Description": "The Journal of DoD Research & Engineering (JDR&E) publishes scientific innovations, commentary, and cutting-edge research from the R&E Communities of Interest (CoI).",
+              "Date": null,
+              "Publisher": "JDR&E"
+            }
+          },
+          {
+            "node": {
+              "Name": "Crosstalk The Journal of Software Engineering",
+              "Type": "Journal",
+              "Url": "https://community.apan.org/wg/crosstalk/",
+              "Description": "Promotes software excellence through information dissemination, tailored specifically for the Department of Defense (DoD) software engineering audience. Formed in 1988, CrossTalk began as an effort of the Air Force Embedded Computer Support Improvement Program (ESIP).",
+              "Date": null,
+              "Publisher": "309th SMXG"
+            }
+          },
+          {
+            "node": {
+              "Name": "The Next Wave (TNW)",
+              "Type": "Journal",
+              "Url": "https://www.nsa.gov/Research/The-Next-Wave/",
+              "Description": "The Next Wave (TNW) is a journal discussing the research and technological innovation taking place at the NSA. TNW began in 1992 as an internal employee newsletter known as Tech Trend Notes, but as a result of an increase in readership and external requests for the publication, it was released to the public in 2004 with a new name: The Next Wave.",
+              "Date": null,
+              "Publisher": "NSA"
+            }
+          },
+          {
+            "node": {
+              "Name": "Innovation for Digital Transformation and Policy Analytics",
+              "Type": "Research & References",
+              "Url": "https://acqirc.org/publications/",
+              "Description": "This report presents the initial results of an AIRC Policy Test Laboratory (PTL) study and was performed by the research team over a period of two months. The goal of this project was to establish an initial reference architecture to support the development of the PTL, which is conceived as a service where a domain model developed in a project can be used and/or integrated with another model of a different domain developed in a different project.",
+              "Date": null,
+              "Publisher": "AIRC"
+            }
+          },
+          {
+            "node": {
+              "Name": "Technology Readiness Levels (TRL)",
+              "Type": "Research & References",
+              "Url": "https://www.ctoinnovation.mil/technology-readiness-levels-in-the-dod.pdf",
+              "Description": "From early concept to an application of a technology in it's final form, the technology readiness level (TRL) is a helpful knowledge-based standard and shorthand for evaluating the maturity of a technology or invention.",
+              "Date": null,
+              "Publisher": "USD(A&S)"
+            }
+          },
+          {
+            "node": {
+              "Name": "The State of U.S. Science and Engineering 2024",
+              "Type": "Research & References",
+              "Url": "https://ncses.nsf.gov/pubs/nsb20243",
+              "Description": "The National Science Board (Board) is required under the National Science Foundation (NSF) Act, 42 U.S.C. § 1863 (j) (1) to prepare and transmit the biennial Science and Engineering Indicators (Indicators) report to the President and Congress every even-numbered year. The report is prepared by the National Center for Science and Engineering Statistics (NCSES) within NSF under the guidance of the Board.",
+              "Date": null,
+              "Publisher": "NSF"
+            }
+          },
+          {
+            "node": {
+              "Name": "Assessing Transfer of Department of Defense-Originated Dual-Use Technology, Report No. 5",
+              "Type": "Research & References",
+              "Url": "https://business.gmu.edu/news/2023-01/assessing-transfer-department-defense-originated-dual-use-technology",
+              "Description": "Report to the Laboratories and Personnel Office, Office of the Under Secretary of Defense for Research and Engineering, U.S. Department of Defense in response to the FY2020 NDAA requirement for \"the Under Secretary of Defense for Research and Engineering to enter into an arrangement with a university business school or law school with resident economics and intellectual property expertise to conduct an independent assessment of the Defense Advanced Research Projects Agency’s and defense laboratories’ contracting and intellectual property management policies and their effects on the commercialization of and innovation in dual-use technology.\"",
+              "Date": "5/16/22",
+              "Publisher": "USD(R&E)"
+            }
+          },
+          {
+            "node": {
+              "Name": "Technology Readiness Assessment Guide",
+              "Type": "Research & References",
+              "Url": "https://www.gao.gov/products/gao-20-48g",
+              "Description": "Technology readiness assessments (TRA) are used to evaluate the maturity of technologies and whether they are developed enough to be incorporated into a system without too much risk. Technologies that are not as mature as recommended have been the source of program delays and cost increases. This guide is intended to provide a better understanding of technology maturity and a framework for conducting high-quality TRAs.",
+              "Date": "1/7/20",
+              "Publisher": "GAO"
+            }
+          },
+          {
+            "node": {
+              "Name": "DoD Experimentation Guidebook",
+              "Type": "Research & References",
+              "Url": "https://www.dau.edu/tools/t/DoD-Experimentation-Guidebook",
+              "Description": "Military Departments and Defense Agencies have long used experimentation to support innovation and develop solutions to vexing military problems. Many of these organizations and their subject matter experts (SME) have developed processes, methods, and tools that help them succeed in their efforts. The Office of the Under Secretary of Defense for Research and Engineering (OUSD(R&E), Prototypes and Experiments (P&E), was tasked to capture and consolidate these approaches, best practices, and recommendations into a single reference document for the Department of Defense (DoD). This guidebook is designed to complement DoD, Military Service, and Defense Agency policy pertaining to experimentation, providing the reader with discretionary best practices that should be tailored to the circumstances of each experiment. It is a living document and will be updated periodically to ensure that direction captured from governing documents is current and that best practices are fresh. ",
+              "Date": "10/1/21",
+              "Publisher": "USD(R&E)"
+            }
+          },
+          {
+            "node": {
+              "Name": "Strengthening the Defense Innovation Ecosystem",
+              "Type": "Research & References",
+              "Url": "https://www.rand.org/pubs/research_reports/RRA1352-1.html",
+              "Description": "Technological superiority is vital to U.S. national security and defense. The Department of Defense's (DoD's) direct investment in basic research and development remains critically important, but it is insufficient to retain a technological advantage against near-peer rivals, especially China, which is aggressively modernizing. DoD recognizes that it must leverage relevant private sector–developed technology.",
+              "Date": "3/7/23",
+              "Publisher": "RAND Corporation"
+            }
+          },
+          {
+            "node": {
+              "Name": "The Power of Many: Leveraging Consortia to Promote Innovation…",
+              "Type": "Research & References",
+              "Url": "https://business.gmu.edu/news/2022-07/power-many-leveraging-consortia-promote-innovation-expand-defense-industrial-base-and",
+              "Description": "Building on previous research into Other Transaction Agreements (OTAs), the report includes the participation of twelve distinct DoD consortia which provided data and case studies to researchers. Based on the research, interviews, and data analysis, the authors found the consortia model supports government acquisition efforts.",
+              "Date": "6/20/22",
+              "Publisher": "GMU Center for Government Contracting"
+            }
+          },
+          {
+            "node": {
+              "Name": "DOD Can Improve Planning for Consortia Awards ",
+              "Type": "Research & References",
+              "Url": "https://www.gao.gov/products/gao-22-105357",
+              "Description": "DOD sometimes awards funds via an \"other transaction agreement.\" OTAs allow for more flexibility than traditional contracts do, enabling DOD to partner with contractors it hasn't worked with before. DOD can award OTAs to an individual organization (like a contractor) or to a consortium, which is a group of organizations focused on a specific technology area (like cybersecurity).\r\n\r\nDOD has been awarding OTAs through consortia more frequently. But the agency hasn't systematically tracked data on which consortia—and therefore which technology areas—receive these funding awards.",
+              "Date": "9/20/22",
+              "Publisher": "GAO"
+            }
+          },
+          {
+            "node": {
+              "Name": "DoD Other Transaction (OT) Guide",
+              "Type": "Research & References",
+              "Url": "https://www.acq.osd.mil/asda/dpc/cp/policy/other-policy-areas.html",
+              "Description": "This guide is issued by the Office of the Under Secretary of Defense for Acquisition and Sustainment (OUSD(A&S)), the organization responsible for promulgation of policy for OTs. This guide introduces all three types of OT agreements: research, prototype, and production.",
+              "Date": "7/1/23",
+              "Publisher": "USD(A&S)"
+            }
+          },
+          {
+            "node": {
+              "Name": "Guide to Research Other Transactions (OT)",
+              "Type": "Research & References",
+              "Url": "https://www.acq.osd.mil/asda/dpc/cp/policy/other-policy-areas.html",
+              "Description": "This Guide provides advice, guidance and best practices on planning, publicizing, soliciting, evaluating, negotiating, awarding and administering Research OTs.  DoD’s OT authority allows for three types of OTs by law – Research, Prototype, and Production.",
+              "Date": "6/1/23",
+              "Publisher": "USD(R&E)"
+            }
+          },
+          {
+            "node": {
+              "Name": "Army Technology Transfer Program (T2) Annual Report",
+              "Type": "Research & References",
+              "Url": "https://www.army.mil/asaalt#org-resources",
+              "Description": "Technology transfer (T2) uses a variety of agreement mechanisms for partnering with commercial, academic, or other private entities. These agreements form research and development (R&D) partnerships between Army laboratories and technical centers and non-federal entities, and include cooperative research and development agreements (CRADAs), patent license agreements, testing agreements, educational partnership agreements, and other agreements. T2 collaborations enhance Army’s research, development, test, and engineering capabilities by leveraging the private capital of the partner, including but not limited to, personnel, services, facilities, equipment, intellectual property, or resources. T2 is vital to the Army’s mission of developing new technologies and promoting technology commercialization as the Army seeks to modernize and maintain its technological advantage. Public-Private collaborations offer an innovative approach to modernization.",
+              "Date": "6/1/23",
+              "Publisher": "Army"
+            }
+          },
+          {
+            "node": {
+              "Name": "Army Weapons Systems Handbook",
+              "Type": "Research & References",
+              "Url": "https://www.army.mil/asaalt#org-resources",
+              "Description": "Details within this handbook include program descriptions, status and specifications, projected activities, benefits to the Soldier, as well as names and locations of the Army’s industry partners, to help you gain a better understanding of our collaborative efforts to empower, unburden, and protect our men and women in uniform. This year, we added a special section on the U.S. Army Futures Command and its Cross-Functional Teams to illustrate how we are working together to facilitate early and continuous teaming across the enterprise to enable the Army to achieve its modernization goals with greater speed, efficiency, and effectiveness.",
+              "Date": "1/1/21",
+              "Publisher": "Army"
+            }
+          },
+          {
+            "node": {
+              "Name": "DOT&E Annual Report",
+              "Type": "Research & References",
+              "Url": "https://www.dote.osd.mil/annualreport/",
+              "Description": "DOT&E Annual Report",
+              "Date": "1/1/23",
+              "Publisher": "DOT&E"
+            }
+          },
+          {
+            "node": {
+              "Name": "State of Competition within the Defense Industrial Base  ",
+              "Type": "Research & References",
+              "Url": "https://www.defense.gov/News/Releases/Release/Article/2934955/state-of-competition-in-the-defense-industrial-base/",
+              "Description": "The report discusses the current state of competition in the DIB and recommends DoD actions to promote a more diverse and expanded industrial base. The report also outlines actions that DoD is taking to specifically promote competition in its small business vendor base as well as in five priority industrial base sectors, including microelectronics, missiles and munitions, high-capacity batteries, castings and forgings, and critical minerals and materials.",
+              "Date": "2/1/22",
+              "Publisher": "USD(A&S)"
+            }
+          },
+          {
+            "node": {
+              "Name": "Commission on PPBE Reform Final Report",
+              "Type": "Research & References",
+              "Url": "https://ppbereform.senate.gov/finalreport/",
+              "Description": "The Interim Report includes research requirements that Congress identified in Section 1004 of the National Defense Authorization Act for Fiscal Year 2022, 10 potential recommendations requiring additional DoD and Congressional stakeholder feedback to inform the Commission’s Final Report, and 13 actions that Congress and DoD can act on now to improve the PPBE process.",
+              "Date": "3/6/24",
+              "Publisher": "Congress"
+            }
+          },
+          {
+            "node": {
+              "Name": "Arming the Eagle, Outpacing the Dragon: Understanding and Out Competing China’s Defense Acquisition and Innovation System",
+              "Type": "Research & References",
+              "Url": "https://www.mitre.org/news-insights/publication/arming-eagle-outpacing-dragon-understanding-and-out-competing-chinas",
+              "Description": "\"Arming the Eagle\" examines the Chinese military’s approach to acquisition & innovation, highlighting their primary strategies for fielding new military capabilities. It then recommends strategies the DoD should adopt to maintain a technical advantage.",
+              "Date": "6/17/22",
+              "Publisher": "MITRE"
+            }
+          },
+          {
+            "node": {
+              "Name": "Surge Capacity in the Defense Munitions Industrial Base",
+              "Type": "Research & References",
+              "Url": "https://asb.army.mil/Reports/",
+              "Description": "This study provides findings and recommendations regarding munitions requirements, governance, sustainable procurement, capital investment, contracting, and other issues in the OIB/DMIB. The study team focused its findings to describe impacts on the Army’s procurement of munitions",
+              "Date": "9/14/23",
+              "Publisher": "Army"
+            }
+          },
+          {
+            "node": {
+              "Name": "Impacts of Technology Transfer ",
+              "Type": "Research & References",
+              "Url": "https://www.techlinkcenter.org/impacts",
+              "Description": "Commercialization of technologies from DOD and VA research activities results in new products and services that stimulate the U.S. economy, deliver new capabilities to the U.S. warfighter, and serve the health and wellness needs of our veterans and everyone.",
+              "Date": null,
+              "Publisher": "USD(R&E)"
+            }
+          },
+          {
+            "node": {
+              "Name": "Small Business Research Programs:\r\nMost Agencies Allow Applicants to Define Needs and Propose Solutions (Open topics)",
+              "Type": "Research & References",
+              "Url": "https://www.gao.gov/products/gao-23-106338#:~:text=Small%20businesses%20submit%20proposals%20with,agencies'%20use%20of%20open%20topics",
+              "Description": "Seven of 11 federal agencies participating in the Small Business Innovation Research (SBIR) and Small Business Technology Transfer (STTR) programs used open topics from fiscal years 2019 through 2021. In response to solicitations with open topics, small businesses submit proposals that both define research needs and propose solutions to address them. The remaining four agencies only used conventional topics. For these topics, agencies define needs and small businesses propose solutions. Officials from the 11 agencies said they expect to continue their existing use of topic types in future years. Over the 3-year period, open topic awards accounted for about 40 percent of all awards and $4.1 billion. The percentage of awards originating from open topics increased from 36 percent in 2019 to 40 percent in 2020 and 46 percent in 2021. Open and conventional topic awards differed in terms of small business participation from fiscal years 2019 through 2021, according to GAO analysis of award data. Based on several GAO analyses, businesses receiving conventional topic awards tended to receive multiple awards, which could indicate that open topics promote a more competitive environment.",
+              "Date": "9/29/23",
+              "Publisher": "GAO"
+            }
+          },
+          {
+            "node": {
+              "Name": "2024 Annual Threat Assessment of the US Intelligence Community",
+              "Type": "Research & References",
+              "Url": "https://www.dni.gov/index.php/newsroom/press-releases/press-releases-2024/3789-odni-releases-2024-annual-threat-assessment-of-the-u-s-intelligence-community?s=09",
+              "Description": "The Office of the Director of National Intelligence (ODNI) today released the 2024 Annual Threat Assessment of the U.S. Intelligence Community. This report reflects the collective insights of the Intelligence Community, which is committed every day to providing the nuanced, independent, and unvarnished intelligence that policymakers, warfighters, and domestic law enforcement personnel need to protect American lives and America's interests anywhere in the world.",
+              "Date": "3/11/24",
+              "Publisher": "ODNI"
+            }
+          },
+          {
+            "node": {
+              "Name": "DoD Mission Engineering Guide (MEG)",
+              "Type": "Research & References",
+              "Url": "https://ac.cto.mil/mission-engineering/",
+              "Description": "The MEG version 2.0 serves as a resource to aid current and prospective practitioners in understanding mission engineering principles, methodology, and attributes. The MEG is not a Department of Defense manual, instruction, or directive; rather, the MEG describes the interdisciplinary process of mission engineering. This extensible and scalable process helps to answer questions related to assessing systems or systems of systems (SoS) within a mission context to inform design and integration of current and emergent capabilities to yield desired mission outcomes.\r\n\r\nSince its first publication in November 2020, the MEG has undergone practical review and implementation by a diverse community of mission engineers, both within and outside the Department. In this revision, the essential methodology and fundamental elements of the mission engineering process are preserved. The MEG version 2.0 clarifies and expands upon mission engineering best practices, terminology, activities, and products to ensure both novice and expert practitioners have a clear understanding of the purpose, application, and benefits of the mission engineering process.",
+              "Date": "10/1/23",
+              "Publisher": "USD(R&E)"
+            }
+          }
+        ]
+      }
+    },
+    "pageContext": {}
+  },
+  "staticQueryHashes": [
+    "1880280850"
+  ],
+  "slicesMap": {}
+}
