@@ -1,0 +1,186 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 90vh;
+                 background-color: #111111;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#ff6666", "font": {"color": "white"}, "id": "elem-ryO5LjRq", "label": "DLA J68 Research \u0026\nDevelopment", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-jFWFv3Qs", "label": "Office of\nAcquisition\nEnablers", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-qsmpRFBC", "label": "OASD(NCB)", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-9vNFrJhE", "label": "Defense\nMicroelectronics\nActivity", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-N4HjtuCC", "label": "Acquisition\nInnovation\nResearch Center", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-WzTw1r2E", "label": "Commerical\nTechnologies for\nMaintenance\nActivities (CTMA)", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-e3JPDbjj", "label": "DoD Ordnance\nTechnology\nConsortium", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-kcKa4uCU", "label": "DASD(TRAC)", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-Sl8stQTc", "label": "Geophysical\nDetection of\nNuclear\nProliferation", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-GOVTX7iU", "label": "National Armaments\nConsortium (NAC)", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-t1bfJ5P4", "label": "IDA Systems and\nAnalyses Center", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-Rq2C0fMy", "label": "Defense\nElectronics\nConsortium", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-c1dnGjOW", "label": "National Defense\nResearch Institute", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-vMSH11P9", "label": "American\nMetalcasting\nConsortium", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-AL96dPRU", "label": "Vertical Lift\nConsortium (VLC)", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-hbfMMz8x", "label": "Office of Small\nBusiness Programs", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-GHSuktjZ", "label": "Forging Defense\nManufacturing\nConsortium (FDMC)", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-1etp19Up", "label": "Defense Logistics\nAgency", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-q5h3m6s9", "label": "USD(A\u0026S)", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-J6GS1mjM", "label": "Office of Small\nBusiness Programs\n(OSBP)", "shape": "dot"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "elem-q5h3m6s9", "to": "elem-c1dnGjOW"}, {"arrows": "to", "from": "elem-q5h3m6s9", "to": "elem-GOVTX7iU"}, {"arrows": "to", "from": "elem-q5h3m6s9", "to": "elem-Rq2C0fMy"}, {"arrows": "to", "from": "elem-q5h3m6s9", "to": "elem-9vNFrJhE"}, {"arrows": "to", "from": "elem-q5h3m6s9", "to": "elem-qsmpRFBC"}, {"arrows": "to", "from": "elem-q5h3m6s9", "to": "elem-e3JPDbjj"}, {"arrows": "to", "from": "elem-q5h3m6s9", "to": "elem-J6GS1mjM"}, {"arrows": "to", "from": "elem-q5h3m6s9", "to": "elem-AL96dPRU"}, {"arrows": "to", "from": "elem-q5h3m6s9", "to": "elem-jFWFv3Qs"}, {"arrows": "to", "from": "elem-q5h3m6s9", "to": "elem-N4HjtuCC"}, {"arrows": "to", "from": "elem-q5h3m6s9", "to": "elem-hbfMMz8x"}, {"arrows": "to", "from": "elem-q5h3m6s9", "to": "elem-t1bfJ5P4"}, {"arrows": "to", "from": "elem-q5h3m6s9", "to": "elem-1etp19Up"}, {"arrows": "to", "from": "elem-qsmpRFBC", "to": "elem-kcKa4uCU"}, {"arrows": "to", "from": "elem-1etp19Up", "to": "elem-GHSuktjZ"}, {"arrows": "to", "from": "elem-1etp19Up", "to": "elem-ryO5LjRq"}, {"arrows": "to", "from": "elem-1etp19Up", "to": "elem-vMSH11P9"}, {"arrows": "to", "from": "elem-1etp19Up", "to": "elem-WzTw1r2E"}, {"arrows": "to", "from": "elem-kcKa4uCU", "to": "elem-Sl8stQTc"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"layout": {"hierarchical": {"enabled": true, "direction": "UD", "sortMethod": "directed", "levelSeparation": 240, "nodeSpacing": 260, "treeSpacing": 300}, "improvedLayout": false, "randomSeed": 42}, "physics": {"enabled": false}, "interaction": {"zoomView": true, "dragView": true}, "nodes": {"shape": "dot", "size": 14, "font": {"size": 18, "strokeWidth": 2, "multi": "html"}, "margin": 12}, "edges": {"arrows": {"to": {"enabled": true, "scaleFactor": 0.6}}, "smooth": {"type": "cubicBezier"}}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    
+        <style>
+        #nodePopup {
+          position: absolute;
+          display: none;
+          background: rgba(20,20,20,0.95);
+          color: #fff;
+          padding: 12px 16px;
+          border-radius: 10px;
+          max-width: 400px;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+          font-size: 15px;
+          line-height: 1.4;
+          z-index: 9999;
+        }
+        #nodePopup h3 {
+          margin-top: 0;
+          color: #fff;
+          font-size: 18px;
+        }
+        #nodePopup a { color: #6cf; }
+        </style>
+
+        <div id="nodePopup"></div>
+        <script>
+        const nodeData = {"elem-ryO5LjRq": {"label": "DLA J68 Research & Development", "etype": "USD(A&S)", "parent": "Defense Logistics Agency", "location": "Fort Belvoir, VA", "website": "https://www.dla.mil/Information-Operations/Research-And-Development/", "desc": "Направлен на улучшение поддержки истребителей путем удовлетворения военных потребностей, переопределения внутренних бизнес-процессов глобальной цепочки поставок DLA и решения проблем производства на промышленных базах."}, "elem-jFWFv3Qs": {"label": "Office of Acquisition Enablers", "etype": "USD(A&S)", "parent": "USD(A&S)", "location": "Pentagon, DC", "website": "https://www.acq.osd.mil/asda/ae/", "desc": "Предоставить специалистам по закупкам инновационные, основанные на данных методы и политики для обеспечения ведения боевых действий с необходимой скоростью."}, "elem-qsmpRFBC": {"label": "OASD(NCB)", "etype": "USD(A&S)", "parent": "USD(A&S)", "location": "Washington, DC", "website": "https://www.acq.osd.mil/ncbdp/index.html", "desc": "Управление помощника министра обороны по программам ядерной, химической и биологической защиты (OASD(NCB)) возглавляет усилия Министерства обороны по обеспечению безопасного, надежного и эффективного ядерного сдерживания США против угроз оружия массового уничтожения. По мере того как мир возвращается к соперничеству великих держав и к осознанию того, что угрозы против Соединенных Штатов, их союзников и интересов множатся и им становится все труднее противостоять, OASD (NCB) находится в авангарде усилий США по поддержанию и модернизации средств ядерного сдерживания, одновременно обеспечивая химическую и биологическую защиту и соблюдение международных договоров и соглашений NCB. OASD (NCB) меняет способы реагирования Министерства обороны на угрозы, связанные с применением оружия массового уничтожения, от оперативного до административного, а также скорости реагирования и производства."}, "elem-9vNFrJhE": {"label": "Defense Microelectronics Activity", "etype": "USD(A&S)", "parent": "USD(A&S)", "location": "Sacremento, CA", "website": "https://www.dmea.osd.mil/", "desc": "Обеспечивает стабильные, гарантированные поставки микроэлектроники Министерству обороны и правительственным учреждениям США путем развития партнерских отношений с оборонными подрядчиками или путем заключения лицензионных соглашений на интеллектуальную собственность с ведущими поставщиками технологий страны."}, "elem-N4HjtuCC": {"label": "Acquisition Innovation Research Center", "etype": "USD(A&S)", "parent": "System Engineering Research Center", "location": "Hoboken, New Jersey", "website": "https://acqirc.org/", "desc": "Внедрять инновации и альтернативные методы, необходимые для того, чтобы лучше реагировать на быстрый рост технологических достижений, имеющих решающее значение для сегодняшних истребителей."}, "elem-WzTw1r2E": {"label": "Commerical Technologies for Maintenance Activities (CTMA)", "etype": "USD(A&S)", "parent": "Defense Logistics Agency", "location": "Ann Arbor, MI", "website": "https://www.ncms.org/ctma/", "desc": "CTMA — это соглашение о сотрудничестве, заключенное в партнерстве с Управлением заместителя помощника министра обороны по материальной готовности (ODASD MR) и NCMS. Его цель — обеспечить готовность американских истребителей и их техники к любой ситуации, используя самые современные и хорошо обслуживаемые платформы, данные и доступные инструменты. Он обеспечивает демонстрации, оценки и проверки технологий в поддержку надежности и устойчивости и всегда должен приносить пользу военной, промышленной базе США и общественному благу."}, "elem-e3JPDbjj": {"label": "DoD Ordnance Technology Consortium", "etype": "USD(A&S)", "parent": "USD(A&S)", "location": "Summerville, SC", "website": "https://nac-dotc.org/", "desc": "Интегрируйте сообщество DoD Ordnance для совместной работы в области исследований и разработки прототипов решений для продвижения и перехода на системы боеприпасов, подсистемы и технологии компонентов."}, "elem-kcKa4uCU": {"label": "DASD(TRAC)", "etype": "USD(A&S)", "parent": "OASD(NCB)", "location": "Washington, DC", "website": "https://www.acq.osd.mil/ncbdp/trac/index.html", "desc": "Заместитель помощника министра обороны по уменьшению угроз и контролю над вооружениями (DASD (TRAC)) выполняет возложенные на Конгресс и ведомство обязанности, связанные с управлением договорами, программой химической демилитаризации, программой совместного уменьшения угрозы и противодействием развитию оружия массового уничтожения (CWMD). ODASD (TRAC) является компонентом Управления помощника министра обороны по программам ядерной, химической и биологической защиты (OASD (NCB)), которое подчиняется Управлению заместителя министра обороны по закупкам и снабжению (USD (A&S))."}, "elem-Sl8stQTc": {"label": "Geophysical Detection of Nuclear Proliferation", "etype": "USD(A&S)", "parent": "DCTO(S&T)", "location": "Fairbanks, Alaska", "website": "https://uarc.gi.alaska.edu/", "desc": "Обнаруживать, определять местонахождение, характеризовать и оценивать потенциальную угрозу ядерной деятельности во всем мире посредством исследований, разработок, испытаний и оценки научных и технологических возможностей."}, "elem-GOVTX7iU": {"label": "National Armaments Consortium (NAC)", "etype": "USD(A&S)", "parent": "USD(A&S)", "location": "Summerville, SC", "website": "https://www.nacconsortium.org/", "desc": "Наша миссия состоит в том, чтобы способствовать сотрудничеству между правительством, промышленностью и научными кругами для поиска доминирующих решений сложных проблем национального вооружения."}, "elem-t1bfJ5P4": {"label": "IDA Systems and Analyses Center", "etype": "USD(A&S)", "parent": "DCTO(S&T)", "location": "Alexandria, Virginia", "website": "https://www.ida.org/SAC.aspx", "desc": "Ответьте на самые сложные вопросы политики США в области безопасности и науки с помощью объективного анализа, используя выдающийся научный, технический и аналитический опыт."}, "elem-Rq2C0fMy": {"label": "Defense Electronics Consortium", "etype": "USD(A&S)", "parent": "USD(A&S)", "location": "Washington, DC", "website": "https://www.deconsortium.org/", "desc": "Миссия DEC состоит в том, чтобы укрепить экономическую и силовую позицию промышленной базы оборонной электроники США и предоставить Министерству обороны более глубокие знания и связи с электронной промышленностью США, одновременно предоставляя промышленности более широкий доступ к возможностям Министерства обороны."}, "elem-c1dnGjOW": {"label": "National Defense Research Institute", "etype": "USD(A&S)", "parent": "DCTO(S&T)", "location": "Santa Monica, California", "website": "http://www.rand.org/nsrd/ndri.html", "desc": "Проводит исследования и анализ для Управления министра обороны, Объединенного штаба, объединенных боевых командований, оборонных ведомств, Корпуса морской пехоты США и ВМС США."}, "elem-vMSH11P9": {"label": "American Metalcasting Consortium", "etype": "USD(A&S)", "parent": "Defense Logistics Agency", "location": "Summerville, SC", "website": "https://amc.ati.org/", "desc": "AMC разрабатывает и внедряет лучшие технологии и процессы литья металлов для поддержки миссии DLA по повышению готовности и эффективности боевых действий американских истребителей. Более качественные металлические компоненты обеспечивают технологическое превосходство на поле боя, на море, в воздухе и за пределами стратосферы."}, "elem-AL96dPRU": {"label": "Vertical Lift Consortium (VLC)", "etype": "USD(A&S)", "parent": "USD(A&S)", "location": "Summerville, SC", "website": "https://www.verticalliftconsortium.org/", "desc": "Правительство совместно с VLC осуществляет скоординированную программу исследований и разработок, направленную на разработку прототипов авиационных технологий. В соответствии с этим Соглашением правительство вместе с неправительственными членами VLC может осуществлять скоординированное планирование, а также исследования и разработки прототипов, призванные охватить следующее, что касается авиационных технологий:"}, "elem-hbfMMz8x": {"label": "Office of Small Business Programs", "etype": "USD(A&S)", "parent": "USD(A&S)", "location": "Pentagon, DC", "website": "https://business.defense.gov/About/Mission/", "desc": "Мы максимизируем возможности малого бизнеса внести свой вклад в национальную безопасность, обеспечивая боевую мощь наших войск и экономическую мощь нашей страны."}, "elem-GHSuktjZ": {"label": "Forging Defense Manufacturing Consortium (FDMC)", "etype": "USD(A&S)", "parent": "Defense Logistics Agency", "location": "Summerville, SC", "website": "https://fdmc.ati.org/", "desc": "Выявлять, исследовать, разрабатывать и внедрять технические и корпоративные решения для улучшения возможностей и конкурентоспособности кузнечного производства в поддержку цепочек поставок кузнечной продукции правительства США. Содействовать своевременному и точному обмену информацией и координации программ между правительственными учреждениями США, неправительственными организациями, отраслевыми клиентами и поставщиками."}, "elem-1etp19Up": {"label": "Defense Logistics Agency", "etype": "USD(A&S)", "parent": "USD(A&S)", "location": "Fort Belvoir, VA", "website": "https://www.dla.mil/", "desc": "Агентство оборонной логистики управляет сквозной глобальной цепочкой поставок оборонной продукции – от сырья до конечного потребителя – для пяти военных служб, 11 боевых командований, других федеральных, государственных и местных агентств, а также стран-партнеров и союзников. Миссия DLA — «обеспечить готовность и смертоносность Warfighter Always и поддержать нашу страну посредством качественной и активной глобальной логистики». Для выполнения этой миссии штат DLA насчитывает около 25 000 сотрудников, разделенных на несколько цепочек поставок, которые заключают контракты на материалы и услуги по всем классам поставок военного назначения, включая: предметы первой необходимости (еда/вода), одежду и текстиль, нефть и другие энергетические продукты, строительные материалы и оборудование, товары личного спроса, медицинские материалы и оборудование, а также запасные части для наземных, морских и воздушных систем."}, "elem-q5h3m6s9": {"label": "USD(A&S)", "etype": "USD(A&S)", "parent": "Secretary of Defense", "location": "", "website": "https://www.acq.osd.mil/", "desc": "Обеспечьте быстрое и экономичное предоставление и поддержание безопасных, отказоустойчивых и выдающихся возможностей для бойцов и международных партнеров."}, "elem-J6GS1mjM": {"label": "Office of Small Business Programs (OSBP)", "etype": "Unknown", "parent": "", "location": "", "website": "", "desc": ""}};
+        const popup = document.getElementById("nodePopup");
+
+        network.on("click", function (params) {
+          if (params.nodes.length > 0) {
+            const id = params.nodes[0];
+            const n = nodeData[id];
+            if (!n) return;
+            const html = `
+              <h3>${n.label}</h3>
+              <p><b>Тип:</b> ${n.etype || '—'}<br>
+                 <b>Подразделение:</b> ${n.parent || '—'}<br>
+                 <b>Местоположение:</b> ${n.location || '—'}<br>
+                 <b>Сайт:</b> <a href='${n.website || '#'}' target='_blank'>${n.website || '—'}</a></p>
+              <div style='margin-top:8px;color:#ccc;font-size:14px;'>${n.desc || 'Нет описания.'}</div>`;
+            popup.innerHTML = html;
+            popup.style.display = 'block';
+            // позиционируем возле курсора
+            const e = params.event.srcEvent;
+            popup.style.left = (e.pageX + 20) + 'px';
+            popup.style.top = (e.pageY + 20) + 'px';
+          } else {
+            popup.style.display = 'none';
+          }
+        });
+
+        // скрываем при клике мимо узлов
+        network.on("click", function(params) {
+          if (params.nodes.length === 0) {
+            popup.style.display = 'none';
+          }
+        });
+        </script>
+        
+</body>
+</html>

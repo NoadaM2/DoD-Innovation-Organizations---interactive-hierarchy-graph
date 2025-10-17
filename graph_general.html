@@ -1,0 +1,186 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 90vh;
+                 background-color: #111111;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#4da6ff", "font": {"color": "white"}, "id": "elem-mjriOCXD", "label": "Air Force", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-JXm8Y7QA", "label": "Joint Staff", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-iyqwwUIG", "label": "USD(P\u0026R)", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-tYhSon0H", "label": "Defense Innovation\nUnit", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-bPZYPUAw", "label": "USD(R\u0026E)", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-VwGmEzHV", "label": "INDOPACOM", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-dmhDWcXi", "label": "National Guard\nBureau", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-CAT8v1Hq", "label": "CENTCOM", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "virtual-secdef", "label": "Secretary of\nDefense", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-9nKZQXY0", "label": "Chief Digital and\nArtifical\nIntelligence\nOffice (CDAO)", "shape": "dot"}, {"color": "#ffcc00", "font": {"color": "white"}, "id": "elem-alLKsSbt", "label": "Army", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-21ny1L71", "label": "CYBERCOM", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-rnnsJToa", "label": "USD(I\u0026S)", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-T2qBYtK3", "label": "STRATCOM", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-oHEEddNU", "label": "TRANSCOM", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-Ydl0a8Wo", "label": "SOCOM", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-IOElCNb7", "label": "Strategic\nCapabilites Office\n(SCO)", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-q5h3m6s9", "label": "USD(A\u0026S)", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-q9w1yLVo", "label": "SPACECOM", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-QRP0hRyp", "label": "EUCOM", "shape": "dot"}, {"color": "#80ff80", "font": {"color": "white"}, "id": "elem-1TB0YM9D", "label": "Navy", "shape": "dot"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "virtual-secdef", "to": "elem-1TB0YM9D"}, {"arrows": "to", "from": "virtual-secdef", "to": "elem-21ny1L71"}, {"arrows": "to", "from": "virtual-secdef", "to": "elem-9nKZQXY0"}, {"arrows": "to", "from": "virtual-secdef", "to": "elem-CAT8v1Hq"}, {"arrows": "to", "from": "virtual-secdef", "to": "elem-IOElCNb7"}, {"arrows": "to", "from": "virtual-secdef", "to": "elem-JXm8Y7QA"}, {"arrows": "to", "from": "virtual-secdef", "to": "elem-QRP0hRyp"}, {"arrows": "to", "from": "virtual-secdef", "to": "elem-T2qBYtK3"}, {"arrows": "to", "from": "virtual-secdef", "to": "elem-VwGmEzHV"}, {"arrows": "to", "from": "virtual-secdef", "to": "elem-Ydl0a8Wo"}, {"arrows": "to", "from": "virtual-secdef", "to": "elem-alLKsSbt"}, {"arrows": "to", "from": "virtual-secdef", "to": "elem-bPZYPUAw"}, {"arrows": "to", "from": "virtual-secdef", "to": "elem-dmhDWcXi"}, {"arrows": "to", "from": "virtual-secdef", "to": "elem-iyqwwUIG"}, {"arrows": "to", "from": "virtual-secdef", "to": "elem-mjriOCXD"}, {"arrows": "to", "from": "virtual-secdef", "to": "elem-oHEEddNU"}, {"arrows": "to", "from": "virtual-secdef", "to": "elem-q5h3m6s9"}, {"arrows": "to", "from": "virtual-secdef", "to": "elem-q9w1yLVo"}, {"arrows": "to", "from": "virtual-secdef", "to": "elem-rnnsJToa"}, {"arrows": "to", "from": "virtual-secdef", "to": "elem-tYhSon0H"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"layout": {"hierarchical": {"enabled": true, "direction": "UD", "sortMethod": "directed", "levelSeparation": 240, "nodeSpacing": 260, "treeSpacing": 300}, "improvedLayout": false, "randomSeed": 42}, "physics": {"enabled": false}, "interaction": {"zoomView": true, "dragView": true}, "nodes": {"shape": "dot", "size": 14, "font": {"size": 18, "strokeWidth": 2, "multi": "html"}, "margin": 12}, "edges": {"arrows": {"to": {"enabled": true, "scaleFactor": 0.6}}, "smooth": {"type": "cubicBezier"}}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    
+        <style>
+        #nodePopup {
+          position: absolute;
+          display: none;
+          background: rgba(20,20,20,0.95);
+          color: #fff;
+          padding: 12px 16px;
+          border-radius: 10px;
+          max-width: 400px;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+          font-size: 15px;
+          line-height: 1.4;
+          z-index: 9999;
+        }
+        #nodePopup h3 {
+          margin-top: 0;
+          color: #fff;
+          font-size: 18px;
+        }
+        #nodePopup a { color: #6cf; }
+        </style>
+
+        <div id="nodePopup"></div>
+        <script>
+        const nodeData = {"elem-mjriOCXD": {"label": "Air Force", "etype": "Air Force", "parent": "Secretary of Defense", "location": "", "website": "https://www.af.mil/", "desc": "Миссия ВВС США — летать, сражаться и побеждать — авиация всегда и везде. Независимо от того, работаете ли вы полный или неполный рабочий день, в форме или без нее, каждый, кто служит, играет решающую роль, помогая нам добиться успеха в миссии."}, "elem-JXm8Y7QA": {"label": "Joint Staff", "etype": "Joint Staff", "parent": "Secretary of Defense", "location": "Washington, DC", "website": "https://www.jcs.mil/", "desc": "Загрузить исторический справочник CJCS. Объединенный комитет начальников штабов состоит из председателя, заместителя председателя, начальника штаба армии, начальника военно-морских операций, начальника штаба ВВС, коменданта морской пехоты, начальника Бюро национальной гвардии и начальника космических операций."}, "elem-iyqwwUIG": {"label": "USD(P&R)", "etype": "USD(P&R)", "parent": "Secretary of Defense", "location": "", "website": "https://prhome.defense.gov/", "desc": "В поддержку Объединенного военного истребителя выполняйте императивы Национальной стратегии обороны посредством эффективной политики, руководства и надзора для повышения готовности Министерства обороны, а также оптимизации управления талантами и кадровых программ, соответствующего обучения и образования, медицинского обслуживания мирового класса, качественной поддержки семей и повышения устойчивости за счет разнообразия, инклюзивности и равных возможностей."}, "elem-tYhSon0H": {"label": "Defense Innovation Unit", "etype": "USD(R&E)", "parent": "Secretary of Defense", "location": "Mountain View, California", "website": "https://www.diu.mil/", "desc": "Ускорить внедрение Министерством обороны коммерческих технологий, преобразовать военный потенциал и возможности, а также укрепить инновационную базу американской национальной безопасности."}, "elem-bPZYPUAw": {"label": "USD(R&E)", "etype": "USD(R&E)", "parent": "Secretary of Defense", "location": "", "website": "https://www.cto.mil/", "desc": "Заместитель министра обороны по исследованиям и разработкам (USD(R&E)) выступает в качестве основного советника руководства Министерства обороны (DOD) по всем вопросам, касающимся научно-исследовательских и инженерных предприятий Министерства, разработки и перехода технологий, разработки прототипов, экспериментов и управления испытательными полигонами и деятельностью. Министерство обороны (R&E) несет ведущую ответственность за синхронизацию усилий по науке и технологиям (S&T) Министерства обороны, Объединенного штаба и служб. USD (R&E) также выполняет функции главного технического директора (CTO) департамента, и ему поручена важная миссия по обеспечению постоянного развития технологий и инноваций на предприятии Министерства обороны. В качестве технического директора Министерство финансов США (R&E) консультирует министра обороны по всем вопросам, связанным с исследованиями; машиностроение; производство; развивающее тестирование и оценка; а также мероприятия и программы по развитию технологий, инноваций и защиты в Министерстве обороны, а также происходящие на международном уровне. Министерство США (R&E) также устанавливает приоритеты по этим вопросам, чтобы обеспечить соответствие политике и указаниям Канцелярии министра обороны. Министерство США (R&E) также осуществляет надзор за критически важными возможностями, управляемыми оборонными ведомствами, и деятельностью на местах, включая Агентство перспективных исследовательских проектов Министерства обороны (DARPA), Агентство противоракетной обороны (MDA), Подразделение оборонных инноваций (DIU) и Агентство космического развития (SDA), а также офисы Совета по оборонной науке и инновациям."}, "elem-VwGmEzHV": {"label": "INDOPACOM", "etype": "Combatant Command", "parent": "Secretary of Defense", "location": "Halawa, HI", "website": "https://www.pacom.mil/", "desc": "Индо-Тихоокеанское командование США (USINDOPACOM) — одно из шести географических боевых командований, определенных Единым планом командования (UCP) Министерства обороны. В качестве географического боевого командования USINDOPACOM отвечает за использование и интеграцию сил армии, флота, военно-воздушных сил и морской пехоты США в зоне ответственности USINDOPACOM (AOR) для достижения целей национальной безопасности США при одновременной защите национальных интересов. ЗО USINDOPACOM покрывает большую часть земного шара, чем любое другое географическое боевое командование, и граничит со всеми остальными пятью географическими боевыми командованиями. Командующий Индо-Тихоокеанским командованием США подчиняется президенту Соединенных Штатов через министра обороны и поддерживается несколькими компонентными и субунифицированными командованиями, включая: Вооруженные силы США в Корее, Вооруженные силы США в Японии, Командование специальных операций США в Тихом океане, Тихоокеанский флот США, Тихоокеанские силы морской пехоты США, Тихоокеанские военно-воздушные силы США и Тихоокеанская армия США. Штаб-квартира этих командований находится на Гавайях, а их силы размещены и развернуты по всему региону."}, "elem-dmhDWcXi": {"label": "National Guard Bureau", "etype": "National Guard Bureau", "parent": "Secretary of Defense", "location": "", "website": "https://www.nationalguard.mil/", "desc": "Национальная гвардия продолжает свою историческую двойную миссию, предоставляя обученные подразделения штатам, территориям и округу Колумбия и сохраняя все необходимое для защиты жизни и имущества. Гвардия также предоставляет нации подготовленные подразделения, оснащенные и готовые защищать Соединенные Штаты и их интересы по всему миру."}, "elem-CAT8v1Hq": {"label": "CENTCOM", "etype": "Combatant Command", "parent": "Secretary of Defense", "location": "Tampa, FL", "website": "https://www.centcom.mil/", "desc": "USCENTCOM — объединенное боевое командование Министерства обороны США. Наша миссия состоит в том, чтобы направлять и обеспечивать военные операции и действия с союзниками и партнерами для повышения региональной безопасности и стабильности в поддержку непреходящих интересов США. Зона ответственности ЦЕНТКОМа США (ЗО) охватывает более 4 миллионов квадратных миль и населена более чем 560 миллионами человек из 25 этнических групп, говорящих на 20 языках с сотнями диалектов и исповедующих множество религий, пересекающих национальные границы. География региона состоит из пересечения трех континентов и жизненно важных торговых морских путей, воздушных коридоров, трубопроводов и сухопутных маршрутов. В 21 стране ЗО, которая простирается от Северо-Восточной Африки через Ближний Восток до Центральной и Южной Азии, существуют формы правления, охватывающие весь политический спектр, включая развивающиеся демократии, наследственные монархии, автократии и исламистские теократические режимы."}, "virtual-secdef": {"label": "Secretary of Defense", "etype": "Unknown", "parent": "", "location": "", "website": "", "desc": ""}, "elem-9nKZQXY0": {"label": "Chief Digital and Artifical Intelligence Office (CDAO)", "etype": "CDAO", "parent": "Secretary of Defense", "location": "Pentagon, DC", "website": "https://www.ai.mil/", "desc": "Отвечает за ускорение внедрения Министерством обороны данных, аналитики и искусственного интеллекта для создания преимуществ в принятии решений, от зала заседаний до поля боя."}, "elem-alLKsSbt": {"label": "Army", "etype": "Army", "parent": "Secretary of Defense", "location": "", "website": "https://www.army.mil/", "desc": "Развертывать, вести и побеждать в войнах нашей страны, обеспечивая готовое, быстрое и устойчивое доминирование на суше сил армии по всему спектру конфликтов в рамках объединенных сил. Миссия армии жизненно важна для нации, потому что мы являемся службой, способной нанести поражение сухопутным силам противника и на неопределенный срок захватить и контролировать те вещи, которые противник ценит больше всего – его землю, его ресурсы и его население."}, "elem-21ny1L71": {"label": "CYBERCOM", "etype": "Combatant Command", "parent": "Secretary of Defense", "location": "Fort Meade, MD", "website": "https://www.cybercom.mil/", "desc": "Командование объединяет управление операциями в киберпространстве, укрепляет возможности Министерства обороны в киберпространстве, а также интегрирует и укрепляет опыт Министерства обороны в киберпространстве. USCYBERCOM улучшает возможности Министерства обороны по эксплуатации устойчивых и надежных информационных и коммуникационных сетей, противодействию угрозам киберпространства и обеспечению доступа к киберпространству. USCYBERCOM разрабатывает структуру киберсил, требования к обучению и стандарты сертификации, которые позволят Службам создать киберсилы, необходимые для выполнения поставленных перед нами задач. Командование также тесно сотрудничает с межведомственными и международными партнерами при выполнении этих важнейших задач."}, "elem-rnnsJToa": {"label": "USD(I&S)", "etype": "USD(I&S)", "parent": "Secretary of Defense", "location": "", "website": "https://ousdi.defense.gov/", "desc": "USD(I) является главным помощником по штабу (PSA) и советником Министерства обороны и Министерства обороны по вопросам разведки, контрразведки (CI), безопасности, конфиденциальной деятельности и других вопросов, связанных с разведкой (именуемых в этой директиве DoDD 5143.01, 24 октября 2014 г., изменение 1, 22 апреля 2015 г. 2 «распределенные обязанности» или «военная разведка, CI, и безопасность»). В этом качестве Министерство обороны США (I) осуществляет полномочия, руководство и контроль Министерства обороны США (DIA), Национального агентства геопространственной разведки (NGA), Агентства национальной безопасности/Центральной службы безопасности (NSA/CSS), Национального разведывательного управления (NRO) и Службы безопасности обороны (DSS); и осуществляет планирование, политику и стратегический надзор за всей связанной с ней политикой, планами и программами."}, "elem-T2qBYtK3": {"label": "STRATCOM", "etype": "Combatant Command", "parent": "Secretary of Defense", "location": "Nebraska, NE", "website": "https://www.stratcom.mil/", "desc": "USSTRATCOM сочетает в себе синергию устаревшей миссии США по ядерному командованию и контролю с ответственностью за космические операции; глобальная забастовка; глобальная противоракетная оборона; и глобальное командование, контроль, связь, компьютеры, разведка, наблюдение и рекогносцировка (C4ISR). Это динамичное командование дает национальному руководству единый ресурс для лучшего понимания конкретных угроз по всему миру и средств быстрого реагирования на эти угрозы."}, "elem-oHEEddNU": {"label": "TRANSCOM", "etype": "Combatant Command", "parent": "Secretary of Defense", "location": "Scott AFB, Illinois", "website": "https://www.ustranscom.mil/", "desc": "Миссия Транспортного командования США (USTRANSCOM) Транспортное командование США существует как боевое командование, призванное проецировать и поддерживать боевую мощь в то время и в месте по выбору нации. Как единственный менеджер глобальной оборонной транспортной системы Америки, нам поручена координация людей и транспортных средств, чтобы позволить нашей стране перебрасывать и поддерживать силы, когда угодно, где угодно и до тех пор, пока они необходимы."}, "elem-Ydl0a8Wo": {"label": "SOCOM", "etype": "Combatant Command", "parent": "Secretary of Defense", "location": "Tampa, FL", "website": "https://www.socom.mil/", "desc": "Министерство обороны (DoD) активировало Командование специальных операций США (USSOCOM) 16 апреля 1987 года на базе ВВС Макдилл, штат Флорида. Министерство обороны создало новое объединенное командование в ответ на действия Конгресса по Закону о реорганизации обороны Голдуотера-Николса 1986 года и поправке Нанна-Коэна к Закону о полномочиях национальной обороны 1987 года. Конгресс поручил активировать новое четырехзвездочное командование для подготовки специального назначения. Оперативные силы (ССО) будут нести выполнять порученные миссии и, по указанию президента или министра обороны (SECDEF), планировать и проводить специальные операции."}, "elem-IOElCNb7": {"label": "Strategic Capabilites Office (SCO)", "etype": "Secretary of Defense", "parent": "Secretary of Defense", "location": "Pentagon, DC", "website": "none", "desc": "Быстро разработать портфель возможностей для противодействия близким противникам и улучшить позицию США в борьбе с будущими угрозами."}, "elem-q5h3m6s9": {"label": "USD(A&S)", "etype": "USD(A&S)", "parent": "Secretary of Defense", "location": "", "website": "https://www.acq.osd.mil/", "desc": "Обеспечьте быстрое и экономичное предоставление и поддержание безопасных, отказоустойчивых и выдающихся возможностей для бойцов и международных партнеров."}, "elem-q9w1yLVo": {"label": "SPACECOM", "etype": "Combatant Command", "parent": "Secretary of Defense", "location": "Colorado Springs, Colorado", "website": "https://www.spacecom.mil/", "desc": "Космическое командование США проводит операции в космосе, из него и в космосе для сдерживания конфликтов и, при необходимости, подавления агрессии, предоставления космической боевой мощи Объединенным/Объединенным силам и защиты жизненно важных интересов США вместе с союзниками и партнерами."}, "elem-QRP0hRyp": {"label": "EUCOM", "etype": "Combatant Command", "parent": "Secretary of Defense", "location": "Vaihingen (Stuttgart), Baden-Württemberg", "website": "https://www.eucom.mil/", "desc": "USEUCOM — объединенное боевое командование (COCOM), задачей которого является поддержание сил в готовности к проведению всего спектра военных операций в одностороннем порядке или совместно с партнерами по коалиции; повысить трансатлантическую безопасность посредством поддержки НАТО; способствовать региональной стабильности; и продвигать интересы США в своей сфере деятельности, которая включает 51 страну и территорию. EUCOM — один из двух зарубежных COCOM и единственный, расположенный в зоне его деятельности."}, "elem-1TB0YM9D": {"label": "Navy", "etype": "Navy", "parent": "Secretary of Defense", "location": "", "website": "https://www.navy.mil/", "desc": "Соединенные Штаты являются морской державой, и ВМС США защищают Америку на море. Вместе с нашими союзниками и партнерами мы защищаем свободу, сохраняем экономическое процветание и сохраняем моря открытыми и свободными. Наша нация вовлечена в долгосрочную конкуренцию. Чтобы защищать американские интересы по всему миру, ВМС США должны оставаться готовыми выполнять свою вечную роль в соответствии с указаниями Конгресса и президента."}};
+        const popup = document.getElementById("nodePopup");
+
+        network.on("click", function (params) {
+          if (params.nodes.length > 0) {
+            const id = params.nodes[0];
+            const n = nodeData[id];
+            if (!n) return;
+            const html = `
+              <h3>${n.label}</h3>
+              <p><b>Тип:</b> ${n.etype || '—'}<br>
+                 <b>Подразделение:</b> ${n.parent || '—'}<br>
+                 <b>Местоположение:</b> ${n.location || '—'}<br>
+                 <b>Сайт:</b> <a href='${n.website || '#'}' target='_blank'>${n.website || '—'}</a></p>
+              <div style='margin-top:8px;color:#ccc;font-size:14px;'>${n.desc || 'Нет описания.'}</div>`;
+            popup.innerHTML = html;
+            popup.style.display = 'block';
+            // позиционируем возле курсора
+            const e = params.event.srcEvent;
+            popup.style.left = (e.pageX + 20) + 'px';
+            popup.style.top = (e.pageY + 20) + 'px';
+          } else {
+            popup.style.display = 'none';
+          }
+        });
+
+        // скрываем при клике мимо узлов
+        network.on("click", function(params) {
+          if (params.nodes.length === 0) {
+            popup.style.display = 'none';
+          }
+        });
+        </script>
+        
+</body>
+</html>

@@ -1,0 +1,186 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 90vh;
+                 background-color: #111111;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#ff6666", "font": {"color": "white"}, "id": "elem-OfsZk37z", "label": "Laboratory for\nTelecommunication\nSciences", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-zQX3x2C2", "label": "Laboratory for\nAnalytic Sciences", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-8EuCJFrk", "label": "Applied Research\nLaboratory for\nIntelligence and\nSecurity", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-TT6d0hTp", "label": "NSA\u0027s\nCybersecurity\nCollaboration\nCenter (CCC)", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-WNzvbJ1i", "label": "National Security\nAgency (NSA)", "shape": "dot"}, {"color": "#ffcc00", "font": {"color": "white"}, "id": "elem-83YVkIhI", "label": "Consortium for\nCommand, Control,\nand Communications\nin Cyberspace (C5)", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-uwo9jvry", "label": "National\nReconnaissance\nOffice (NRO)", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-a79TwgG5", "label": "Moonshot Labs", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-xfBkZ5ZB", "label": "Center for\nAdvancing Science,\nTechnology,\nLearning, and\nEngagement\n(CASTLE)", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-I7aBizi1", "label": "Cybersecurity\nDirectorate,\nNational Security\nAgency (NSA)", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-8dS0VbVR", "label": "National\nGeospatial-Intelligence\nAgency Consortium", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-ccPy73sX", "label": "Defense\nCounterintelligence\nand Security\nAgency (DCSA)", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-6GKgVE5A", "label": "National\nGeospatial-Intelligence\nAgency (NGA)", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-ExOpN8jS", "label": "Missouri\nTechnology\nCorporation", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-nqlpMKNh", "label": "Laboratory for\nPhysical Sciences\n(LPS)", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-wvAtHNno", "label": "Defense\nIntelligence\nAgency (DIA)", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-jF6tKAHa", "label": "IDA Communications\n\u0026 Computing Center", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-u20sigeV", "label": "Laboratory for\nAdvanced\nCybersecurity\n(LAC)", "shape": "dot"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "elem-rnnsJToa", "label": "USD(I\u0026S)", "shape": "dot"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "elem-rnnsJToa", "to": "elem-ccPy73sX"}, {"arrows": "to", "from": "elem-rnnsJToa", "to": "elem-uwo9jvry"}, {"arrows": "to", "from": "elem-rnnsJToa", "to": "elem-6GKgVE5A"}, {"arrows": "to", "from": "elem-rnnsJToa", "to": "elem-8EuCJFrk"}, {"arrows": "to", "from": "elem-rnnsJToa", "to": "elem-wvAtHNno"}, {"arrows": "to", "from": "elem-rnnsJToa", "to": "elem-WNzvbJ1i"}, {"arrows": "to", "from": "elem-ccPy73sX", "to": "elem-83YVkIhI"}, {"arrows": "to", "from": "elem-uwo9jvry", "to": "elem-xfBkZ5ZB"}, {"arrows": "to", "from": "elem-6GKgVE5A", "to": "elem-ExOpN8jS"}, {"arrows": "to", "from": "elem-6GKgVE5A", "to": "elem-8dS0VbVR"}, {"arrows": "to", "from": "elem-6GKgVE5A", "to": "elem-a79TwgG5"}, {"arrows": "to", "from": "elem-WNzvbJ1i", "to": "elem-u20sigeV"}, {"arrows": "to", "from": "elem-WNzvbJ1i", "to": "elem-jF6tKAHa"}, {"arrows": "to", "from": "elem-WNzvbJ1i", "to": "elem-nqlpMKNh"}, {"arrows": "to", "from": "elem-WNzvbJ1i", "to": "elem-OfsZk37z"}, {"arrows": "to", "from": "elem-WNzvbJ1i", "to": "elem-zQX3x2C2"}, {"arrows": "to", "from": "elem-WNzvbJ1i", "to": "elem-I7aBizi1"}, {"arrows": "to", "from": "elem-WNzvbJ1i", "to": "elem-TT6d0hTp"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"layout": {"hierarchical": {"enabled": true, "direction": "UD", "sortMethod": "directed", "levelSeparation": 240, "nodeSpacing": 260, "treeSpacing": 300}, "improvedLayout": false, "randomSeed": 42}, "physics": {"enabled": false}, "interaction": {"zoomView": true, "dragView": true}, "nodes": {"shape": "dot", "size": 14, "font": {"size": 18, "strokeWidth": 2, "multi": "html"}, "margin": 12}, "edges": {"arrows": {"to": {"enabled": true, "scaleFactor": 0.6}}, "smooth": {"type": "cubicBezier"}}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    
+        <style>
+        #nodePopup {
+          position: absolute;
+          display: none;
+          background: rgba(20,20,20,0.95);
+          color: #fff;
+          padding: 12px 16px;
+          border-radius: 10px;
+          max-width: 400px;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+          font-size: 15px;
+          line-height: 1.4;
+          z-index: 9999;
+        }
+        #nodePopup h3 {
+          margin-top: 0;
+          color: #fff;
+          font-size: 18px;
+        }
+        #nodePopup a { color: #6cf; }
+        </style>
+
+        <div id="nodePopup"></div>
+        <script>
+        const nodeData = {"elem-OfsZk37z": {"label": "Laboratory for Telecommunication Sciences", "etype": "USD(I&S)", "parent": "National Security Agency (NSA)", "location": "College Park, MD", "website": "https://www.ltsnet.net/index.html", "desc": "На стыке научных кругов и правительства Лаборатория телекоммуникационных наук (LTS) проводит как секретные, так и несекретные исследования в области сетевых и компьютерных технологий, изучая последствия новых областей связи.  Наши исследователи работают на передовых технологиях, улучшая миссию Агентства национальной безопасности."}, "elem-zQX3x2C2": {"label": "Laboratory for Analytic Sciences", "etype": "USD(I&S)", "parent": "National Security Agency (NSA)", "location": "Raleign, NC", "website": "https://ncsu-las.org/about/", "desc": "Лаборатория аналитических наук — это партнерство между разведывательным сообществом и Университетом штата Северная Каролина, которое разрабатывает инновационные технологии и профессиональные навыки, помогающие решать важные для миссии проблемы. Основанная в 2013 году Агентством национальной безопасности и штатом Северная Каролина, LAS каждый год объединяет сотрудников из трех секторов – промышленности, научных кругов и правительства – для проведения исследований, которые оказывают непосредственное влияние на национальную безопасность."}, "elem-8EuCJFrk": {"label": "Applied Research Laboratory for Intelligence and Security", "etype": "USD(I&S)", "parent": "DCTO(S&T)", "location": "College Park, Maryland", "website": "http://www.arlis.umd.edu/", "desc": "Поддерживая правительственные службы безопасности и разведки, ARLIS стремится интегрировать социальные и поведенческие науки, искусственный интеллект и компьютерные технологии для новых возможностей прикладных исследований и разработок в сфере человеческого домена."}, "elem-TT6d0hTp": {"label": "NSA's Cybersecurity Collaboration Center (CCC)", "etype": "USD(I&S)", "parent": "National Security Agency (NSA)", "location": "Fort Meade, MD", "website": "https://www.nsa.gov/About/Cybersecurity-Collaboration-Center/", "desc": "Центр сотрудничества в области кибербезопасности (CCC) АНБ использует возможности отраслевых партнерств для предотвращения и искоренения иностранных киберугроз для систем национальной безопасности (NSS), Министерства обороны (DoD) и оборонно-промышленной базы (DIB). Этот новаторский центр взаимодействия с частным сектором предназначен для создания среды для обмена информацией между АНБ и его партнерами, объединяя наш соответствующий опыт, методы и возможности для защиты наиболее важных сетей страны. Эти отношения сотрудничества используют уникальные сильные стороны как правительства, так и промышленности и представляют собой жизненно важную часть общенационального подхода к кибербезопасности."}, "elem-WNzvbJ1i": {"label": "National Security Agency (NSA)", "etype": "USD(I&S)", "parent": "USD(I&S)", "location": "Fort Meade, MD", "website": "https://www.nsa.gov/", "desc": "Агентство национальной безопасности/Центральная служба безопасности (АНБ/ЦСС) возглавляет правительство США в области криптологии, которая включает в себя как аналитическую разведку (SIGINT), так и продукты и услуги кибербезопасности, а также позволяет операциям компьютерных сетей получить решающее преимущество для страны и наших союзников. На всем сайте АНБ/CSS будут именоваться совместно как АНБ."}, "elem-83YVkIhI": {"label": "Consortium for Command, Control, and Communications in Cyberspace (C5)", "etype": "Army", "parent": "Combat Capabilities Development Command (DEVCOM)", "location": "Washington, DC", "website": "https://cmgcorp.org/c5/", "desc": "C5 ускоряет разработку и внедрение новых возможностей Warfighter за счет использования полномочий на другие транзакции. C5 предоставляет членам инновационный и разумный механизм приобретения для разработки новых технологий и продуктов, отвечающих требованиям государственных заказчиков."}, "elem-uwo9jvry": {"label": "National Reconnaissance Office (NRO)", "etype": "USD(I&S)", "parent": "USD(I&S)", "location": "Chantilly, VA", "website": "https://www.nro.gov/", "desc": "Национальное разведывательное управление стремится защищать безопасность Соединенных Штатов, их граждан и их союзников посредством беспрецедентных возможностей в области космической разведки, наблюдения и рекогносцировки. На протяжении более 60 лет NRO использовала инновации и стратегическое партнерство для разработки, приобретения, запуска и эксплуатации американских спутников-шпионов. Разнообразная архитектура космических аппаратов предоставляет информацию, критически важную для политиков, Министерства обороны, двух десятков федеральных агентств, разведывательного сообщества, военных и коммерческих партнеров. Это и наше наследие, и наша миссия на будущее – обеспечить, чтобы Соединенные Штаты сохраняли и расширяли свое преимущество в условиях растущих вызовов со стороны наших противников."}, "elem-a79TwgG5": {"label": "Moonshot Labs", "etype": "USD(I&S)", "parent": "National Geospatial-Intelligence Agency (NGA)", "location": "St. Louis MO", "website": "https://www.nga.mil/resources/Moonshot_Labs.html", "desc": "Moonshot Labs NGA, открытый в июле 2021 года, представляет собой несекретный инновационный центр и коллайдер, где NGA, ее партнеры и клиенты могут встречаться, творить, сотрудничать и внедрять инновации. Moonshot Labs — это межведомственный актив с инициативным подходом к измерению успеха и подотчетности. Moonshot Labs предлагает предварительный обзор беспрецедентной среды для совместной работы, которая появится в кампусе агентства Next NGA West, когда он откроется в 2025 году. Посмотрите нашу фотогалерею и многое другое ниже."}, "elem-xfBkZ5ZB": {"label": "Center for Advancing Science, Technology, Learning, and Engagement (CASTLE)", "etype": "USD(I&S)", "parent": "National Reconnaissance Office (NRO)", "location": "Chantilly, VA", "website": "https://www.nro.gov/InnovateNRO/CASTLE/", "desc": "CASTLE является результатом сотрудничества с Управлением передовых систем и технологий (AS&T) NRO, Управлением научных исследований ВВС (AFOSR) и их партнерским посредником, Корпорацией прикладных исследований Virginia Tech (VT-ARC)."}, "elem-I7aBizi1": {"label": "Cybersecurity Directorate, National Security Agency (NSA)", "etype": "USD(I&S)", "parent": "National Security Agency (NSA)", "location": "Fort Meade, MD", "website": "https://www.nsa.gov/Cybersecurity/", "desc": "Кибербезопасность АНБ предотвращает и устраняет угрозы системам национальной безопасности США, уделяя особое внимание оборонно-промышленной базе и повышению безопасности американского оружия. Он также стремится содействовать образованию, исследованиям и карьерному росту в области кибербезопасности."}, "elem-8dS0VbVR": {"label": "National Geospatial-Intelligence Agency Consortium", "etype": "USD(I&S)", "parent": "National Geospatial-Intelligence Agency", "location": "Salem, NH", "website": "https://sossecinc.com/sossec-consortium/", "desc": "Управление венчурного капитала и инноваций NGA использует OTA как одно из средств внедрения инновационных и трансформационных изменений в среду Национальной системы геопространственной разведки (NSG) и смежной системы геопространственной разведки (ASG).  Соглашение предусматривает максимальную сумму в 30 миллионов долларов США для нескольких проектов прототипов и представляет собой шестое подобное соглашение SOSSEC с 2007 года."}, "elem-ccPy73sX": {"label": "Defense Counterintelligence and Security Agency (DCSA)", "etype": "USD(I&S)", "parent": "USD(I&S)", "location": "Quantico, VA", "website": "https://www.dcsa.mil/", "desc": "DCSA — это агентство безопасности федерального правительства, призванное защищать доверенную рабочую силу и доверенные рабочие места Америки — реальные или виртуальные. DCSA объединяет две основные задачи: проверку персонала и защиту критически важных технологий, при поддержке функций контрразведки и обучения, образования и сертификации. DCSA обслуживает более 100 федеральных субъектов, контролирует 10 000 проверенных компаний и ежегодно проводит около 2 миллионов дополнительных расследований."}, "elem-6GKgVE5A": {"label": "National Geospatial-Intelligence Agency (NGA)", "etype": "USD(I&S)", "parent": "USD(I&S)", "location": "Springfield, VA", "website": "https://www.nga.mil/", "desc": "Любой, кто управляет кораблем, управляет самолетом, попадает в опасность, принимает решения национальной политики, реагирует на стихийные бедствия или ориентируется с помощью мобильного телефона, все полагаются на Национальное агентство геопространственной разведки. NGA предоставляет геопространственную разведку мирового класса, или GEOINT, которая дает решающее преимущество военным, политикам, специалистам в области разведки и службам быстрого реагирования. Являясь одновременно разведывательным агентством и агентством боевой поддержки, NGA выполняет приоритеты президента в области национальной безопасности в партнерстве с разведывательным сообществом и Министерством обороны. Штаб-квартира NGA находится в Спрингфилде, штат Вирджиния, а также два основных офиса в Сент-Луисе и Арнольде, штат Миссури. Сотни сотрудников NGA служат в группах поддержки в военных, дипломатических и союзных учреждениях США по всему миру»."}, "elem-ExOpN8jS": {"label": "Missouri Technology Corporation", "etype": "USD(I&S)", "parent": "National Geospatial-Intelligence Agency", "location": "Jefferson City, MO", "website": "https://www.missouritechnology.com/", "desc": "Инвестируя непосредственно в предприятия на ранней стадии через фонды IDEA и поддерживая более широкую предпринимательскую экосистему через программу грантов MOBEC, Missouri Technology Corporation («MTC») представляет собой государственно-частное партнерство, созданное Генеральной Ассамблеей штата Миссури для продвижения предпринимательства и содействия росту новых и развивающихся высокотехнологичных компаний. Фонды развития инноваций, развития и предпринимательства (IDEA) распределяются по четырем программам: Missouri TechLaunch, Программа совместного инвестирования стартового капитала, Программа совместного инвестирования венчурного капитала и Программа расширения высокотехнологичной промышленности. Компании в области прикладного машиностроения, обороны и национальной безопасности, биомедицины, ветеринарии и растениеводства, желающие получить начальное или венчурное финансирование, приглашаются к подаче заявок. В рамках программы создания экономического потенциала штата Миссури (MOBEC) MTC осуществляет стратегические инвестиции, которые расширяют систему поддержки предпринимателей, коммерциализирующих новые технологии, или повышают способность штата Миссури развивать свою инновационную экономику. Приемлемыми кандидатами являются государственные или частные некоммерческие исследовательские учреждения штата Миссури, а также некоммерческие организации поддержки предпринимательства и связанные с ними организации."}, "elem-nqlpMKNh": {"label": "Laboratory for Physical Sciences (LPS)", "etype": "USD(I&S)", "parent": "National Security Agency (NSA)", "location": "College Park, MD", "website": "https://www.lps.umd.edu/", "desc": "Лаборатория физических наук существует для стимулирования физических научных исследований в области будущих информационных технологий и предотвращения технологических сюрпризов. Основанная в 1956 году в партнерстве с Университетом Мэриленда, LPS разработала модель фундаментальных и прикладных исследований, ориентированную на взаимодействие правительства с научными кругами и промышленностью. Наши производственные и измерительные лаборатории позволяют исследователям LPS вместе с нашими партнерами создавать, измерять и понимать самые современные системы."}, "elem-wvAtHNno": {"label": "Defense Intelligence Agency (DIA)", "etype": "USD(I&S)", "parent": "USD(I&S)", "location": "Washington, DC", "website": "https://www.dia.mil/", "desc": "В DIA мы предоставляем военную разведку военным, разработчикам оборонной политики и специалистам по планированию сил в Министерстве обороны и разведывательном сообществе в поддержку военного планирования и операций США, а также приобретения систем вооружения. Мы планируем, управляем и проводим разведывательные операции в мирное время, кризис и войну."}, "elem-jF6tKAHa": {"label": "IDA Communications & Computing Center", "etype": "NSA", "parent": "DCTO(S&T)", "location": "Bowie, Maryland", "website": "https://www.ida.org/ida-ffrdcs/center-for-communications-and-computing", "desc": "Выполняет фундаментальные исследования в поддержку миссии Агентства национальной безопасности в области криптологии, которая включает в себя как разведку иностранных сигналов, так и защиту коммуникаций правительства США.  Сосредоточьтесь на вычислениях, передовых алгоритмах, криптологии, сетевых технологиях, безопасности связи, кибербезопасности и анализе данных."}, "elem-u20sigeV": {"label": "Laboratory for Advanced Cybersecurity (LAC)", "etype": "USD(I&S)", "parent": "National Security Agency (NSA)", "location": "", "website": "https://www.nsa.gov/Research/NSA-Mission-Oriented-Research/LAC/", "desc": "Лаборатория передовых исследований в области кибербезопасности АНБ является ведущим центром исследований и разработок в области кибербезопасности при правительстве США; наши эксперты по кибербезопасности проводят и спонсируют исследования в области технологий и методов, которые обеспечат безопасность информационных систем Америки завтрашнего дня. Наши исследователи не просто изобретают продукты — мы пытаемся изобрести более безопасное будущее."}, "elem-rnnsJToa": {"label": "USD(I&S)", "etype": "USD(I&S)", "parent": "Secretary of Defense", "location": "", "website": "https://ousdi.defense.gov/", "desc": "USD(I) является главным помощником по штабу (PSA) и советником Министерства обороны и Министерства обороны по вопросам разведки, контрразведки (CI), безопасности, конфиденциальной деятельности и других вопросов, связанных с разведкой (именуемых в этой директиве DoDD 5143.01, 24 октября 2014 г., изменение 1, 22 апреля 2015 г. 2 «распределенные обязанности» или «военная разведка, CI, и безопасность»). В этом качестве Министерство обороны США (I) осуществляет полномочия, руководство и контроль Министерства обороны США (DIA), Национального агентства геопространственной разведки (NGA), Агентства национальной безопасности/Центральной службы безопасности (NSA/CSS), Национального разведывательного управления (NRO) и Службы безопасности обороны (DSS); и осуществляет планирование, политику и стратегический надзор за всей связанной с ней политикой, планами и программами."}};
+        const popup = document.getElementById("nodePopup");
+
+        network.on("click", function (params) {
+          if (params.nodes.length > 0) {
+            const id = params.nodes[0];
+            const n = nodeData[id];
+            if (!n) return;
+            const html = `
+              <h3>${n.label}</h3>
+              <p><b>Тип:</b> ${n.etype || '—'}<br>
+                 <b>Подразделение:</b> ${n.parent || '—'}<br>
+                 <b>Местоположение:</b> ${n.location || '—'}<br>
+                 <b>Сайт:</b> <a href='${n.website || '#'}' target='_blank'>${n.website || '—'}</a></p>
+              <div style='margin-top:8px;color:#ccc;font-size:14px;'>${n.desc || 'Нет описания.'}</div>`;
+            popup.innerHTML = html;
+            popup.style.display = 'block';
+            // позиционируем возле курсора
+            const e = params.event.srcEvent;
+            popup.style.left = (e.pageX + 20) + 'px';
+            popup.style.top = (e.pageY + 20) + 'px';
+          } else {
+            popup.style.display = 'none';
+          }
+        });
+
+        // скрываем при клике мимо узлов
+        network.on("click", function(params) {
+          if (params.nodes.length === 0) {
+            popup.style.display = 'none';
+          }
+        });
+        </script>
+        
+</body>
+</html>
